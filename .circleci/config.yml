@@ -9,6 +9,9 @@ defaults: &defaults
       - run:
           name: "Run the build itself: this will do rpmlint and check RPMs existence among other things."
           command: build
+      - run:
+          name: "check"
+          command: ls -al
       - persist_to_workspace:
           root: /output
           paths:
