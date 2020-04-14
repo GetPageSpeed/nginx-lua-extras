@@ -8,12 +8,12 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-upstream
-Version:        0.0.5
+Version:        0.10
 Release:        1%{?dist}
-Summary:        pure lua dynamic NGINX upstream module for nginx-module-lua/LuaJIT
+Summary:        Upstream connection load balancing and failover module for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/toruneko/lua-resty-upstream
+URL:            https://github.com/hamishforbes/lua-resty-upstream
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -48,7 +48,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 %{luapkgdir}/*
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
-%license LICENSE
+%license LICENSE.txt
 %doc README.md
 
 

@@ -8,12 +8,12 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-http
-Version:        0.10
+Version:        0.15
 Release:        1%{?dist}
-Summary:        https://github.com/pintsized/lua-resty-http.git
+Summary:        Lua HTTP client cosocket driver for nginx-module-lua / nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/maodeyi/lua-resty-http
+URL:            https://github.com/ledgetech/lua-resty-http
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7

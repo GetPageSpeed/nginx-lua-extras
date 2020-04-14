@@ -10,7 +10,7 @@
 Name:           lua-resty-acme
 Version:        0.5.0
 Release:        1%{?dist}
-Summary:        Automatic Let's Encrypt certificate serving and Lua implementation of ACMEv2 procotol 
+Summary:        Automatic Let's Encrypt certificate serving and Lua implementation of ACMEv2 procotol
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/fffonion/lua-resty-acme
