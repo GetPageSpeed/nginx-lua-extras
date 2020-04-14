@@ -14,7 +14,7 @@ Summary:        Automatic Let's Encrypt certificate serving and Lua implementati
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/fffonion/lua-resty-acme
-Source0:        %{url}/archive/%{gittag}.tar.gz
+Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
 Requires:       lua(abi) = %{luaver}

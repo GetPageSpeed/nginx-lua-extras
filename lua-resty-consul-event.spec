@@ -14,7 +14,7 @@ Summary:        Consul Events HTTP API Wrapper
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/Kong/lua-resty-consul-event
-Source0:        %{url}/archive/%{gittag}.tar.gz
+Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
 Requires:       lua(abi) = %{luaver}

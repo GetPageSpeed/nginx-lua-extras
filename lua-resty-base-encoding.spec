@@ -14,7 +14,7 @@ Summary:        A faster alternative to base64 encoding and provides missing bas
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/spacewander/lua-resty-base-encoding
-Source0:        %{url}/archive/%{gittag}.tar.gz
+Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
 Requires:       lua(abi) = %{luaver}

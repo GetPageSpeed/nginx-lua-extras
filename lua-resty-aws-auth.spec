@@ -14,7 +14,7 @@ Summary:        Lua resty module to calculate AWS signature v4 authorization hea
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/paragasu/lua-resty-aws-auth
-Source0:        %{url}/archive/%{gittag}.tar.gz
+Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
 Requires:       lua(abi) = %{luaver}

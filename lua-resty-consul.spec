@@ -14,7 +14,7 @@ Summary:        Library to interface with the consul HTTP API from nginx-module-
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/hamishforbes/lua-resty-consul
-Source0:        %{url}/archive/%{gittag}.tar.gz
+Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
 Requires:       lua(abi) = %{luaver}

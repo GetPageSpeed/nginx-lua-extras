@@ -14,7 +14,7 @@ Summary:        LuaJIT FFI bindings for CoolProp - Thermophysical Properties for
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/bungle/lua-resty-coolprop
-Source0:        %{url}/archive/%{gittag}.tar.gz
+Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
 Requires:       lua(abi) = %{luaver}

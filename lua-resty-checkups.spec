@@ -14,7 +14,7 @@ Summary:        Manage NGINX upstreams in pure Lua
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/upyun/lua-resty-checkups
-Source0:        %{url}/archive/%{gittag}.tar.gz
+Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
 Requires:       lua(abi) = %{luaver}

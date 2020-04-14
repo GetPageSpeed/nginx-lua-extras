@@ -14,7 +14,7 @@ Summary:        A generic consistent hash implementation for nginx-module-lua/Lu
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/openresty/lua-resty-balancer
-Source0:        %{url}/archive/%{gittag}.tar.gz
+Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
 Requires:       lua(abi) = %{luaver}

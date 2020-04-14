@@ -14,7 +14,7 @@ Summary:        New FFI-based API for lua-NGINX-module
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/openresty/lua-resty-core
-Source0:        %{url}/archive/%{gittag}.tar.gz
+Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
 Requires:       lua(abi) = %{luaver}
