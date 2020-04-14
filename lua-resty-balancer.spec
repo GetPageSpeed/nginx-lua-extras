@@ -5,7 +5,7 @@
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
 %global gittag v0.03
-%global gittag_nov v0.03
+%global gittag_nov 0.03
 
 Name:           lua-resty-balancer
 Version:        0.3

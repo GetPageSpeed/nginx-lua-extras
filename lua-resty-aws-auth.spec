@@ -5,7 +5,7 @@
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
 %global gittag v0.12-0
-%global gittag_nov v0.12-0
+%global gittag_nov 0.12-0
 
 Name:           lua-resty-aws-auth
 Version:        0.12.post0

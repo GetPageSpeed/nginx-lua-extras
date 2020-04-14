@@ -5,7 +5,7 @@
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
 %global gittag v0.2-0
-%global gittag_nov v0.2-0
+%global gittag_nov 0.2-0
 
 Name:           lua-resty-aws-email
 Version:        0.2.post0
