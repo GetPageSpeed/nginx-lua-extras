@@ -1,0 +1,2 @@
+repo: namndev/lua-resty-aws
+summary: AWS ACM and S3 for nginx-module-lua + Lua
