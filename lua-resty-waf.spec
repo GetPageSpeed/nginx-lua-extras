@@ -10,7 +10,7 @@
 Name:           lua-resty-waf
 Version:        0.11.1
 Release:        1%{?dist}
-Summary:        High-performance WAF built on the nginx-module-lua stack
+Summary:        High-performance WAF built on nginx-module-lua stack
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/p0pr0ck5/lua-resty-waf

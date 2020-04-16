@@ -10,7 +10,7 @@
 Name:           lua-resty-pubsub
 Version:        1.0
 Release:        1%{?dist}
-Summary:        Lua Pubsub client driver for the nginx-module-lua based on the cosocket API
+Summary:        Lua Pubsub client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/wingify/lua-resty-pubsub

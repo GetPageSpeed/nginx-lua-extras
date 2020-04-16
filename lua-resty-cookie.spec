@@ -10,7 +10,7 @@
 Name:           lua-resty-cookie
 Version:        0.1.0
 Release:        1%{?dist}
-Summary:        Lua library for HTTP cookie manipulations for nginx-module-lua/nginx-module-lua
+Summary:        Lua library for HTTP cookie manipulations for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/cloudflare/lua-resty-cookie

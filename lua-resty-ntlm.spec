@@ -10,7 +10,7 @@
 Name:           lua-resty-ntlm
 Version:        0.2
 Release:        1%{?dist}
-Summary:        NGINX ntlm module implemented by lua
+Summary:        Nginx ntlm module implemented by lua
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/gosp/lua-resty-ntlm

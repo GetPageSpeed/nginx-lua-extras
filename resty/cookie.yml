@@ -1,0 +1,2 @@
+repo: cloudflare/lua-resty-cookie
+summary: Lua library for HTTP cookie manipulations for nginx-module-lua

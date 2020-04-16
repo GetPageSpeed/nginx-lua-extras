@@ -10,7 +10,7 @@
 Name:           lua-resty-core
 Version:        0.1.17
 Release:        1%{?dist}
-Summary:        New FFI-based API for lua-NGINX-module
+Summary:        New FFI-based API for lua-nginx-module
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/openresty/lua-resty-core

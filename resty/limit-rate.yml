@@ -1,0 +1,3 @@
+repo: upyun/lua-resty-limit-rate
+summary: Lua module for limiting request rate for nginx-module-lua, using the "token
+  bucket" method

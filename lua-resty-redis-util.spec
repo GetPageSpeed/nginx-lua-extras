@@ -10,7 +10,7 @@
 Name:           lua-resty-redis-util
 Version:        0.0.5
 Release:        1%{?dist}
-Summary:        nginx-module-lua/lua-resty-redis 封装工具类
+Summary:        Nginx-module-lua-resty-redis 封装工具类
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/anjia0532/lua-resty-redis-util

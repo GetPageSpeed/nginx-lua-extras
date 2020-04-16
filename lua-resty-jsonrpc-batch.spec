@@ -10,7 +10,7 @@
 Name:           lua-resty-jsonrpc-batch
 Version:        0.0.1
 Release:        1%{?dist}
-Summary:        JSONRPC batch protocol module for nginx-module-lua / nginx-module-lua
+Summary:        JSONRPC batch protocol module for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/mosasiru/lua-resty-jsonrpc-batch

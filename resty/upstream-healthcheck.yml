@@ -1,0 +1,2 @@
+repo: openresty/lua-resty-upstream-healthcheck
+summary: Health Checker for NGINX Upstream Servers in Pure Lua

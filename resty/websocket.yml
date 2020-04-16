@@ -1,0 +1,2 @@
+repo: openresty/lua-resty-websocket
+summary: WebSocket support for nginx-module-lua module

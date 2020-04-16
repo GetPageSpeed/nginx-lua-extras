@@ -1,0 +1,2 @@
+repo: fffonion/lua-resty-openssl
+summary: FFI-based OpenSSL binding for nginx-module-lua

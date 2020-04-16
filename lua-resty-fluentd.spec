@@ -10,7 +10,7 @@
 Name:           lua-resty-fluentd
 Version:        0.0.1
 Release:        1%{?dist}
-Summary:        Lua fluentd logger for the nginx-module-lua based on the cosocket API
+Summary:        Lua fluentd logger for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/msempere/lua-resty-fluentd

@@ -1,0 +1,3 @@
+repo: Unigoge/lua-resty-cache-redis
+summary: NGINX distributed caching layer with Redis and shared memory with HTTP upsync
+  and declarative description

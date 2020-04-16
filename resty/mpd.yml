@@ -1,0 +1,3 @@
+repo: jprjr/lua-resty-mpd
+summary: A client library for the Music Player Daemon, compatible with nginx-module-lua
+  and Luasocket

@@ -1,0 +1,2 @@
+repo: openresty/lua-resty-core
+summary: New FFI-based API for lua-nginx-module

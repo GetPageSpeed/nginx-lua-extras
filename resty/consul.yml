@@ -1,0 +1,2 @@
+repo: hamishforbes/lua-resty-consul
+summary: Library to interface with the consul HTTP API from nginx-module-lua

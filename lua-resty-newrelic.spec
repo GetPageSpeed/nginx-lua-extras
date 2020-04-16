@@ -10,7 +10,7 @@
 Name:           lua-resty-newrelic
 Version:        0.1.post6
 Release:        1%{?dist}
-Summary:        This Lua library is a luajit ffi-based wrapper around newrelic agent SDK for the nginx-module-lua NGINX module
+Summary:        This Lua library is a luajit ffi-based wrapper around newrelic agent SDK for nginx-module-lua nginx module
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/saks/lua-resty-newrelic

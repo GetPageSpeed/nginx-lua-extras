@@ -10,7 +10,7 @@
 Name:           lua-resty-ini
 Version:        0.1
 Release:        1%{?dist}
-Summary:        lua-resty-ini - ini parser for nginx-module-lua
+Summary:        Ini parser for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/doujiang24/lua-resty-ini

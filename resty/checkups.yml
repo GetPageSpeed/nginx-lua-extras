@@ -1,0 +1,2 @@
+repo: upyun/lua-resty-checkups
+summary: Manage NGINX upstreams in pure Lua

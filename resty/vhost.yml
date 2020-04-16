@@ -1,0 +1,2 @@
+repo: hamishforbes/lua-resty-vhost
+summary: Hostname matching library for nginx-module-lua

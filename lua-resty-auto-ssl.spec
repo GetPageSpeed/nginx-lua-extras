@@ -10,7 +10,7 @@
 Name:           lua-resty-auto-ssl
 Version:        0.13.1
 Release:        1%{?dist}
-Summary:        On the fly (and free) SSL registration and renewal inside nginx-module-lua/NGINX with Let's Encrypt
+Summary:        On the fly (and free) SSL registration and renewal inside nginx-module-lua/nginx with Let's Encrypt
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/auto-ssl/lua-resty-auto-ssl

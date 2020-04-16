@@ -1,0 +1,2 @@
+repo: doujiang24/lua-resty-kafka
+summary: Lua kafka client driver for nginx-module-lua based on the cosocket API

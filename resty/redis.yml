@@ -1,0 +1,2 @@
+repo: openresty/lua-resty-redis
+summary: Lua redis client driver for nginx-module-lua based on the cosocket API

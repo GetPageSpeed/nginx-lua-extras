@@ -10,7 +10,7 @@
 Name:           lua-resty-tinyauth
 Version:        0.3
 Release:        1%{?dist}
-Summary:        Lua client for authorising actions with tinyauth on nginx-module-lua/nginx-module-lua
+Summary:        Lua client for authorising actions with tinyauth on nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/tinyauth/lua-resty-tinyauth

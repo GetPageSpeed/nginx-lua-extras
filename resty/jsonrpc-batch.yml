@@ -1,0 +1,2 @@
+repo: mosasiru/lua-resty-jsonrpc-batch
+summary: JSONRPC batch protocol module for nginx-module-lua

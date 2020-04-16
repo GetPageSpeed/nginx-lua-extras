@@ -1,0 +1,2 @@
+repo: openresty/lua-resty-signal
+summary: Lua library for killing or sending signals to UNIX processes

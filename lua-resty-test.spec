@@ -10,7 +10,7 @@
 Name:           lua-resty-test
 Version:        0.1
 Release:        1%{?dist}
-Summary:        Lua test frame for the nginx-module-lua based on nginx-module-lua
+Summary:        Lua test frame for nginx-module-lua based on nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/iresty/lua-resty-test

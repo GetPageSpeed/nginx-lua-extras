@@ -10,7 +10,7 @@
 Name:           lua-resty-nsq
 Version:        0.1
 Release:        1%{?dist}
-Summary:        lua-resty-nsq - Lua nsq client driver for the nginx-module-lua based on the cosocket API
+Summary:        Lua nsq client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/rainingmaster/lua-resty-nsq

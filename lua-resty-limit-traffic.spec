@@ -10,7 +10,7 @@
 Name:           lua-resty-limit-traffic
 Version:        0.6
 Release:        1%{?dist}
-Summary:        Lua library for limiting and controlling traffic in nginx-module-lua/nginx-module-lua
+Summary:        Lua library for limiting and controlling traffic in nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/openresty/lua-resty-limit-traffic

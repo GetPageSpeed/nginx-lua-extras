@@ -1,0 +1,2 @@
+repo: cloudflare/lua-resty-logger-socket
+summary: Raw-socket-based Logger Library for NGINX (based on nginx-module-lua)

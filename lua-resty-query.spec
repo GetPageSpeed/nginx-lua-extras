@@ -10,7 +10,7 @@
 Name:           lua-resty-query
 Version:        0.0.1
 Release:        1%{?dist}
-Summary:        nginx-module-lua下lua操作mysql的builder+query封装
+Summary:        Nginx-module-lua下lua操作mysql的builder+query封装
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/jjonline/lua-resty-query

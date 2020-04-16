@@ -1,0 +1,3 @@
+repo: openresty/lua-resty-upload
+summary: Streaming reader and parser for http file uploading based on nginx-module-lua
+  cosocket

@@ -1,0 +1,2 @@
+repo: openresty/lua-resty-string
+summary: String utilities and common hash functions for nginx-module-lua and LuaJIT

@@ -10,7 +10,7 @@
 Name:           lua-resty-websocket
 Version:        0.7
 Release:        1%{?dist}
-Summary:        WebSocket support for the nginx-module-lua module (and nginx-module-lua)
+Summary:        WebSocket support for nginx-module-lua module
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/openresty/lua-resty-websocket

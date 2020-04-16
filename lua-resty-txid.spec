@@ -10,7 +10,7 @@
 Name:           lua-resty-txid
 Version:        1.0.0
 Release:        1%{?dist}
-Summary:        Generate sortable, unique transaction or request IDs for nginx-module-lua/NGINX
+Summary:        Generate sortable, unique transaction or request IDs for nginx-module-lua/nginx
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/GUI/lua-resty-txid

@@ -10,7 +10,7 @@
 Name:           lua-resty-dns
 Version:        0.21
 Release:        1%{?dist}
-Summary:        DNS resolver for the nginx-module-lua
+Summary:        DNS resolver for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/openresty/lua-resty-dns

@@ -10,7 +10,7 @@
 Name:           lua-resty-jump-consistent-hash
 Version:        0.1.4
 Release:        1%{?dist}
-Summary:        consistent hash for nginx-module-lua
+Summary:        Consistent hash for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/ruoshan/lua-resty-jump-consistent-hash

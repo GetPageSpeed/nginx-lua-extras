@@ -10,7 +10,7 @@
 Name:           lua-resty-rsa
 Version:        1.0.1
 Release:        1%{?dist}
-Summary:        RSA encrypt/decrypt & sign/verify for nginx-module-lua/LuaJIT
+Summary:        RSA encrypt/decrypt & sign/verify for nginx-module-luaJIT
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/spacewander/lua-resty-rsa

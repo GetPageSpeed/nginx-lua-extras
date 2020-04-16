@@ -1,0 +1,2 @@
+repo: bungle/lua-resty-libcjson
+summary: LuaJIT FFI-based cJSON library for nginx-module-lua

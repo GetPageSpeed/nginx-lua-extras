@@ -10,7 +10,7 @@
 Name:           lua-resty-memcached
 Version:        0.14
 Release:        1%{?dist}
-Summary:        Lua memcached client driver for the nginx-module-lua based on the cosocket API
+Summary:        Lua memcached client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/openresty/lua-resty-memcached

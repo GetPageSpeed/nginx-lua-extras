@@ -10,7 +10,7 @@
 Name:           lua-resty-qless-web
 Version:        0.5
 Release:        1%{?dist}
-Summary:        Port of Qless' web interface to the nginx-module-lua environment
+Summary:        Port of Qless' web interface to nginx-module-lua environment
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/hamishforbes/lua-resty-qless-web

@@ -1,0 +1,2 @@
+repo: thibaultcha/lua-resty-jit-uuid
+summary: Fast and dependency-free UUID library for LuaJIT/nginx-module-lua

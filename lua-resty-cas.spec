@@ -10,7 +10,7 @@
 Name:           lua-resty-cas
 Version:        0.1.0
 Release:        1%{?dist}
-Summary:        A component for NGINX access phase module integrated with CAS
+Summary:        A component for nginx access phase module integrated with CAS
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/cas-x/lua-resty-cas
