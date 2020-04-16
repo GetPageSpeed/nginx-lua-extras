@@ -7,13 +7,13 @@
 %global gittag v%{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-coolprop
-Version:        0.9
+Name:           lua-resty-logger
+Version:        0.2.1
 Release:        1%{?dist}
-Summary:        LuaJIT FFI bindings for CoolProp - Thermophysical Properties for the Masses (http://www.coolprop.org)
+Summary:        A logger for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/bungle/lua-resty-coolprop
+URL:            https://github.com/xiedacon/lua-resty-logger
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
