@@ -1,0 +1,3 @@
+repo: bungle/lua-resty-hoedown
+summary: LuaJIT FFI bindings to Hoedown, a standards compliant, fast, secure markdown
+  processing library in C

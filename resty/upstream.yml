@@ -1,0 +1,2 @@
+repo: hamishforbes/lua-resty-upstream
+summary: Upstream connection load balancing and failover module for nginx-module-lua

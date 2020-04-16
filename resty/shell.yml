@@ -1,0 +1,2 @@
+repo: openresty/lua-resty-shell
+summary: Lua module for nonblocking system shell command executions

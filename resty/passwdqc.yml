@@ -1,0 +1,2 @@
+repo: bungle/lua-resty-passwdqc
+summary: LuaJIT FFI bindings to libpasswdqc (http://www.openwall.com/passwdqc/)

@@ -1,0 +1,2 @@
+repo: duhoobo/lua-resty-beanstalk
+summary: Yet another beanstalkd's client library for NGINX Lua

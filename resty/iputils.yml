@@ -1,0 +1,2 @@
+repo: hamishforbes/lua-resty-iputils
+summary: Utility functions for working with IP addresses in nginx-module-lua

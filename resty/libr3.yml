@@ -1,0 +1,2 @@
+repo: iresty/lua-resty-libr3
+summary: High-performance path dispatching library base on libr3 for nginx-module-lua

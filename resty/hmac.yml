@@ -1,0 +1,2 @@
+repo: jamesmarlowe/lua-resty-hmac
+summary: Lua driver for making and receiving hmac signed requests

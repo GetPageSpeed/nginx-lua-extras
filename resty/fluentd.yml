@@ -1,0 +1,2 @@
+repo: msempere/lua-resty-fluentd
+summary: Lua fluentd logger for nginx-module-lua based on the cosocket API

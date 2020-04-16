@@ -1,0 +1,3 @@
+repo: ledgetech/lua-resty-qless
+summary: Lua binding to Qless (Queue / Pipeline management) for nginx-module-lua /
+  Redis

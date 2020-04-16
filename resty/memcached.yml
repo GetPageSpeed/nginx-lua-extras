@@ -1,0 +1,2 @@
+repo: openresty/lua-resty-memcached
+summary: Lua memcached client driver for nginx-module-lua based on the cosocket API

@@ -1,0 +1,2 @@
+repo: GUI/lua-resty-mail
+summary: A high-level, easy to use, and non-blocking email and SMTP library for nginx-module-lua
