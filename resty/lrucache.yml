@@ -1,2 +1,0 @@
-repo: openresty/lua-resty-lrucache
-summary: Lua-land LRU Cache based on LuaJIT FFI

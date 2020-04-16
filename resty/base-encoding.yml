@@ -1,3 +1,0 @@
-repo: spacewander/lua-resty-base-encoding
-summary: A faster alternative to base64 encoding and provides missing base encoding
-  for nginx-module-lua application

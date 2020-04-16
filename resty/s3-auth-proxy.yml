@@ -1,3 +1,0 @@
-repo: benagricola/lua-resty-s3-auth-proxy
-summary: Verify incoming S3 V4 requests, then proxy them onwards with a different
-  S3 keypair

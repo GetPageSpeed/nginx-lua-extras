@@ -1,3 +1,0 @@
-repo: lloydzhou/lua-resty-cache
-summary: Http cache to redis, can server stale response, and using "lua-resty-lock"
-  only allow one request to populate a new cache

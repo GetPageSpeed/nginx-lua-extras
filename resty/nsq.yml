@@ -1,2 +1,0 @@
-repo: rainingmaster/lua-resty-nsq
-summary: Lua nsq client driver for nginx-module-lua based on the cosocket API

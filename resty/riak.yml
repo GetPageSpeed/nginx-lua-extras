@@ -1,3 +1,0 @@
-repo: bakins/lua-resty-riak
-summary: Lua riak protocol buffer client driver for nginx-module-lua based on the
-  cosocket API

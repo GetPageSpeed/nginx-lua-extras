@@ -1,2 +1,0 @@
-repo: openresty/lua-resty-lock
-summary: Simple nonblocking lock API for nginx-module-lua based on shared memory dictionaries

@@ -1,3 +1,0 @@
-repo: bungle/lua-resty-reqargs
-summary: Read application/x-www-form-urlencoded, multipart/form-data, and application/json
-  request args

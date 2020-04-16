@@ -1,3 +1,0 @@
-repo: timebug/lua-resty-httpipe
-summary: Lua HTTP client cosocket driver for nginx-module-lua, interfaces are more
-  flexible
