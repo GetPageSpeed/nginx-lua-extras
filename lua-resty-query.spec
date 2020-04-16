@@ -4,16 +4,16 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag v%{version}
+%global gittag %{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-global-throttle
-Version:        0.1.0
+Name:           lua-resty-query
+Version:        0.0.1
 Release:        1%{?dist}
-Summary:        General purpose flow control with shared storage support
+Summary:        Nginx-module-lua下lua操作mysql的builder+query封装
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/ElvinEfendi/lua-resty-global-throttle
+URL:            https://github.com/jjonline/lua-resty-query
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
