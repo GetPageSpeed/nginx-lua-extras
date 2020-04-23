@@ -1,0 +1,2 @@
+repo: bungle/lua-resty-xxhash
+summary: LuaJIT FFI-bindings to xxHash, an Extremely fast non-cryptographic hash algorithm
