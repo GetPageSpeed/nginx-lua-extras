@@ -4,16 +4,16 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag v%{version}
+%global gittag %{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-xxhash
-Version:        1.0
+Name:           lua-resty-sniproxy
+Version:        0.20
 Release:        1%{?dist}
-Summary:        LuaJIT FFI-bindings to xxHash, an Extremely fast non-cryptographic hash algorithm
+Summary:        SNI Proxy based on stream-lua-nginx-module
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/bungle/lua-resty-xxhash
+URL:            https://github.com/fffonion/lua-resty-sniproxy
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -46,9 +46,6 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 
 %files
 %{luapkgdir}/*
-# Virtually add license macro for EL6:
-%{!?_licensedir:%global license %%doc}
-%license LICENSE
 %doc README.md
 
 

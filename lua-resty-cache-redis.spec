@@ -4,16 +4,16 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag v%{version}
+%global gittag %{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-scrypt
-Version:        1.0
+Name:           lua-resty-cache-redis
+Version:        0.1
 Release:        1%{?dist}
-Summary:        LuaJIT FFI-based scrypt library for nginx-module-lua
+Summary:        NGINX distributed caching layer with Redis and shared memory with HTTP upsync and declarative description
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/bungle/lua-resty-scrypt
+URL:            https://github.com/Unigoge/lua-resty-cache-redis
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
