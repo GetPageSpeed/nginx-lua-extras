@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-session
-Version:        3.1
+Version:        3.2
 Release:        1%{?dist}
 Summary:        Session library for nginx-module-lua – flexible and secure
 Group:          Development/Libraries
