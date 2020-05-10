@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-mpd
-Version:        1.0.5
+Version:        2.0.1
 Release:        1%{?dist}
 Summary:        A client library for the Music Player Daemon, compatible with nginx-module-lua and Luasocket
 Group:          Development/Libraries
