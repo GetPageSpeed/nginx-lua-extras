@@ -7,13 +7,13 @@
 %global gittag v%{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-libr3
-Version:        1.2
+Name:           lua-resty-global-throttle
+Version:        0.1.0
 Release:        1%{?dist}
-Summary:        High-performance path dispatching library base on libr3 for nginx-module-lua
+Summary:        General purpose flow control with shared storage support
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/iresty/lua-resty-libr3
+URL:            https://github.com/ElvinEfendi/lua-resty-global-throttle
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7

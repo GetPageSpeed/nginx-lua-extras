@@ -1,2 +1,2 @@
-repo: p0pr0ck5/lua-resty-influx
-summary: Nginx-module-lua client for InfluxDB
+repo: toruneko/lua-resty-influx
+summary: Lua influx metrics module for nginx-module-luaJIT
