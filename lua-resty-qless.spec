@@ -4,16 +4,16 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag %{version}
+%global gittag v%{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-influx
-Version:        0.2.1
+Name:           lua-resty-qless
+Version:        0.11
 Release:        1%{?dist}
-Summary:        Nginx-module-lua client for InfluxDB
+Summary:        Lua binding to Qless (Queue / Pipeline management) for nginx-module-lua / Redis
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/p0pr0ck5/lua-resty-influx
+URL:            https://github.com/ledgetech/lua-resty-qless
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -46,9 +46,6 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 
 %files
 %{luapkgdir}/*
-# Virtually add license macro for EL6:
-%{!?_licensedir:%global license %%doc}
-%license LICENSE
 %doc README.md
 
 

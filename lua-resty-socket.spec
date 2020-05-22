@@ -7,13 +7,13 @@
 %global gittag %{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-influx
-Version:        0.2.1
+Name:           lua-resty-socket
+Version:        1.0.0
 Release:        1%{?dist}
-Summary:        Nginx-module-lua client for InfluxDB
+Summary:        Automatic LuaSocket/cosockets compatibility module
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/p0pr0ck5/lua-resty-influx
+URL:            https://github.com/thibaultcha/lua-resty-socket
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7

@@ -4,16 +4,16 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag %{version}
-%global gittag_nov %{version}
+%global gittag v0.02
+%global gittag_nov 0.02
 
-Name:           lua-resty-influx
-Version:        0.2.1
+Name:           lua-resty-tlc
+Version:        0.2
 Release:        1%{?dist}
-Summary:        Nginx-module-lua client for InfluxDB
+Summary:        General two level cache (lrucache + shared dict)
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/p0pr0ck5/lua-resty-influx
+URL:            https://github.com/hamishforbes/lua-resty-tlc
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -48,7 +48,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 %{luapkgdir}/*
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
-%license LICENSE
+%license LICENSE.txt
 %doc README.md
 
 

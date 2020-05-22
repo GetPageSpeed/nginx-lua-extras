@@ -4,16 +4,16 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag %{version}
+%global gittag v%{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-influx
-Version:        0.2.1
+Name:           lua-resty-radixtree
+Version:        1.8
 Release:        1%{?dist}
-Summary:        Nginx-module-lua client for InfluxDB
+Summary:        Adaptive Radix Trees implemented in Lua for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/p0pr0ck5/lua-resty-influx
+URL:            https://github.com/api7/lua-resty-radixtree
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
