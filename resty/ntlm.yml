@@ -1,0 +1,2 @@
+repo: gosp/lua-resty-ntlm
+summary: Nginx ntlm module implemented by lua
