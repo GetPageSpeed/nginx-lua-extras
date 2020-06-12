@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-rsa
-Version:        1.0.1
+Version:        1.0.2
 Release:        1%{?dist}
 Summary:        RSA encrypt/decrypt & sign/verify for nginx-module-luaJIT
 Group:          Development/Libraries
