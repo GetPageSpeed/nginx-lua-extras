@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-healthcheck
-Version:        1.2.0
+Version:        1.3.0
 Release:        1%{?dist}
 Summary:        Healthcheck library for nginx-module-lua to validate upstream service status
 Group:          Development/Libraries
