@@ -7,13 +7,13 @@
 %global gittag v%{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-rabbitmqstomp
-Version:        0.1
+Name:           lua-resty-global-throttle
+Version:        0.1.0
 Release:        1%{?dist}
-Summary:        Opinionated Lua RabbitMQ client library for nginx-module-lua apps based on the cosocket API
+Summary:        General purpose flow control with shared storage support
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/wingify/lua-resty-rabbitmqstomp
+URL:            https://github.com/ElvinEfendi/lua-resty-global-throttle
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -46,7 +46,10 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 
 %files
 %{luapkgdir}/*
-%doc README.markdown
+# Virtually add license macro for EL6:
+%{!?_licensedir:%global license %%doc}
+%license LICENSE
+%doc README.md
 
 
 %changelog
