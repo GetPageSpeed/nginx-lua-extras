@@ -7,13 +7,13 @@
 %global gittag v%{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-radixtree
-Version:        2.0
+Name:           lua-resty-nettle
+Version:        1.5
 Release:        1%{?dist}
-Summary:        Adaptive Radix Trees implemented in Lua for nginx-module-lua
+Summary:        LuaJIT FFI bindings for Nettle (a low-level cryptographic library)
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/api7/lua-resty-radixtree
+URL:            https://github.com/bungle/lua-resty-nettle
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7

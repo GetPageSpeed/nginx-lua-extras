@@ -7,13 +7,13 @@
 %global gittag v%{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-radixtree
-Version:        2.0
+Name:           lua-resty-requests
+Version:        0.7.3
 Release:        1%{?dist}
-Summary:        Adaptive Radix Trees implemented in Lua for nginx-module-lua
+Summary:        Yet Another HTTP library for nginx-module-lua - For human beings!
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/api7/lua-resty-radixtree
+URL:            https://github.com/tokers/lua-resty-requests
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -49,7 +49,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
 %license LICENSE
-%doc README.md
+%doc README.markdown
 
 
 %changelog
