@@ -24,7 +24,7 @@ work_dir = os.path.dirname(__file__)
 
 log.basicConfig(level=log.INFO)
 
-repositories = g.search_repositories(query='lua-resty- in:name stars:>=10 archived:false')
+repositories = g.search_repositories(query='lua-resty- in:name stars:>=10 archived:false', sort='stars')
 repo: Repository
 for repo in repositories:
     log.info(f'================= {repo.full_name} =================')
