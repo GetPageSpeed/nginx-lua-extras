@@ -1,3 +1,0 @@
-repo: bungle/lua-resty-macaroons
-summary: "LuaJIT FFI Bindings to libmacaroons \u2013 Macaroons are flexible authorization\
-  \ credentials that support decentralized delegation, attenuation, and verification"
