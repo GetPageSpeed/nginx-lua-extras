@@ -4,11 +4,11 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag v0.09
-%global gittag_nov 0.09
+%global gittag v%{version}
+%global gittag_nov %{version}
 
 Name:           lua-resty-lrucache
-Version:        0.9
+Version:        0.10
 Release:        1%{?dist}
 Summary:        Lua-land LRU Cache based on LuaJIT FFI
 Group:          Development/Libraries

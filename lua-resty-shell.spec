@@ -4,11 +4,11 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag v0.02
-%global gittag_nov 0.02
+%global gittag v0.03
+%global gittag_nov 0.03
 
 Name:           lua-resty-shell
-Version:        0.2
+Version:        0.3
 Release:        1%{?dist}
 Summary:        Lua module for nonblocking system shell command executions
 Group:          Development/Libraries

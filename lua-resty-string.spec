@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-string
-Version:        0.11
+Version:        0.12
 Release:        1%{?dist}
 Summary:        String utilities and common hash functions for nginx-module-lua and LuaJIT
 Group:          Development/Libraries

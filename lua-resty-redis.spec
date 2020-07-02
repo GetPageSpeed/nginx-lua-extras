@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-redis
-Version:        0.27
+Version:        0.28
 Release:        1%{?dist}
 Summary:        Lua redis client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
