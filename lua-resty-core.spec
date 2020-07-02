@@ -26,6 +26,8 @@ Requires:       lua >= %{luaver}
 Requires:       lua-resty-lrucache
 
 Obsoletes:      lua-resty <= 0.1.17
+
+Provides:       lua-resty = %{version}
 BuildArch:      noarch
 
 %description

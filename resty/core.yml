@@ -4,5 +4,7 @@ requires:
   - lua-resty-lrucache
 obsoletes:
   - "lua-resty <= 0.1.17"
+provides:
+  - "lua-resty = %{version}"
 comment: |
   # at resty/core/regex.lua:8: uses module 'resty.lrucache'

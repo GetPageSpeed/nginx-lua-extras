@@ -34,6 +34,12 @@ Obsoletes:      {{ o }}
 {% endfor -%}
 {%- endif -%}
 
+{% if provides is defined and provides is iterable %}
+{% for p in provides -%}
+Provides:       {{ p }}
+{% endfor -%}
+{%- endif -%}
+
 BuildArch:      noarch
 
 %description
