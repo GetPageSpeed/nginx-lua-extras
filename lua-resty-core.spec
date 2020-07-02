@@ -22,6 +22,10 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+
+Requires:       lua-resty-lrucache
+
+Obsoletes:      lua-resty <= 0.1.17
 BuildArch:      noarch
 
 %description

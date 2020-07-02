@@ -22,6 +22,18 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+{% if requires is defined and requires is iterable %}
+{% for r in requires -%}
+Requires:       {{ r }}
+{% endfor -%}
+{%- endif -%}
+
+{% if obsoletes is defined and obsoletes is iterable %}
+{% for o in obsoletes -%}
+Obsoletes:      {{ o }}
+{% endfor -%}
+{%- endif -%}
+
 BuildArch:      noarch
 
 %description

@@ -7,4 +7,5 @@ all:clean
 
 .PHONY: clean
 clean:
-	rm -rf resty/*.yml *.spec
+	find resty ! -name 'core.yml' -type f -exec rm -f {} +
+	rm -rf *.spec
