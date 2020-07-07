@@ -4,11 +4,11 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag v0.06
-%global gittag_nov 0.06
+%global gittag v0.07
+%global gittag_nov 0.07
 
 Name:           lua-resty-limit-traffic
-Version:        0.6
+Version:        0.7
 Release:        1%{?dist}
 Summary:        Lua library for limiting and controlling traffic in nginx-module-lua
 Group:          Development/Libraries
