@@ -1,3 +1,0 @@
-repo: saks/lua-resty-newrelic
-summary: This Lua library is a luajit ffi-based wrapper around newrelic agent SDK
-  for nginx-module-lua nginx module
