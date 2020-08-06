@@ -1,0 +1,2 @@
+repo: paragasu/lua-resty-aws-auth
+summary: Lua resty module to calculate AWS signature v4 authorization header
