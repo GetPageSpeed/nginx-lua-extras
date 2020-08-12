@@ -4,16 +4,16 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag v%{version}
+%global gittag %{version}
 %global gittag_nov %{version}
 
 Name:           lua-resty-http
-Version:        0.15
+Version:        1.0
 Release:        1%{?dist}
-Summary:        Lua HTTP client cosocket driver for nginx-module-lua
+Summary:        Lua http client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/ledgetech/lua-resty-http
+URL:            https://github.com/liseen/lua-resty-http
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -46,10 +46,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 
 %files
 %{luapkgdir}/*
-# Virtually add license macro for EL6:
-%{!?_licensedir:%global license %%doc}
-%license LICENSE
-%doc README.md
+%doc README.markdown
 
 
 %changelog
