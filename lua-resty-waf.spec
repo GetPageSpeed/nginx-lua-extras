@@ -7,13 +7,13 @@
 %global gittag v%{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-http
-Version:        0.15
+Name:           lua-resty-waf
+Version:        0.11.1
 Release:        1%{?dist}
-Summary:        Lua HTTP client cosocket driver for nginx-module-lua
+Summary:        High-performance WAF built on nginx-module-lua stack
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/ledgetech/lua-resty-http
+URL:            https://github.com/p0pr0ck5/lua-resty-waf
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -48,7 +48,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 %{luapkgdir}/*
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
-%license LICENSE
+%license COPYING
 %doc README.md
 
 

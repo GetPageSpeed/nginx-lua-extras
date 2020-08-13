@@ -7,13 +7,13 @@
 %global gittag v%{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-http
-Version:        0.15
+Name:           lua-resty-dns
+Version:        0.21
 Release:        1%{?dist}
-Summary:        Lua HTTP client cosocket driver for nginx-module-lua
+Summary:        DNS resolver for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/ledgetech/lua-resty-http
+URL:            https://github.com/openresty/lua-resty-dns
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -46,10 +46,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 
 %files
 %{luapkgdir}/*
-# Virtually add license macro for EL6:
-%{!?_licensedir:%global license %%doc}
-%license LICENSE
-%doc README.md
+%doc README.markdown
 
 
 %changelog
