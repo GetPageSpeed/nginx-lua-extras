@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-maxminddb
-Version:        1.3.0
+Version:        1.3.2
 Release:        1%{?dist}
 Summary:        A Lua library for reading MaxMind's Geolocation database
 Group:          Development/Libraries
@@ -46,6 +46,9 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 
 %files
 %{luapkgdir}/*
+# Virtually add license macro for EL6:
+%{!?_licensedir:%global license %%doc}
+%license LICENSE
 %doc README.md
 
 
