@@ -4,16 +4,16 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag %{version}
-%global gittag_nov %{version}
+%global gittag 0.02
+%global gittag_nov 0.02
 
-Name:           lua-resty-sniproxy
-Version:        0.22
+Name:           lua-resty-multiplexer
+Version:        0.2
 Release:        1%{?dist}
-Summary:        SNI Proxy based on stream-lua-nginx-module
+Summary:        Transparent port service multiplexer for stream subsystem (not TCPMUX)
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/fffonion/lua-resty-sniproxy
+URL:            https://github.com/fffonion/lua-resty-multiplexer
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
