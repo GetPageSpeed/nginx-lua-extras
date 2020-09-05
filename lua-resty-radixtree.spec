@@ -10,7 +10,7 @@
 Name:           lua-resty-radixtree
 Version:        2.2
 Release:        1%{?dist}
-Summary:        Adaptive Radix Trees implemented in Lua for nginx-module-lua
+Summary:        Adaptive Radix Trees implemented in Lua / LuaJIT
 Group:          Development/Libraries
 License:        BSD
 URL:            https://github.com/api7/lua-resty-radixtree
