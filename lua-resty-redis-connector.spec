@@ -4,11 +4,11 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag v0.08
-%global gittag_nov 0.08
+%global gittag v0.09
+%global gittag_nov 0.09
 
 Name:           lua-resty-redis-connector
-Version:        0.8
+Version:        0.9
 Release:        1%{?dist}
 Summary:        Connection utilities for lua-resty-redis
 Group:          Development/Libraries
