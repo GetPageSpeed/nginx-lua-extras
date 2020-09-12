@@ -1,0 +1,2 @@
+repo: vislee/lua-resty-dns-server
+summary: Lua DNS server driver for nginx-module-lua
