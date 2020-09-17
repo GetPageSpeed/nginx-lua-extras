@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-worker-events
-Version:        1.0.0
+Version:        2.0.0
 Release:        1%{?dist}
 Summary:        Cross Worker Events for NGINX in Pure Lua
 Group:          Development/Libraries
