@@ -7,13 +7,13 @@
 %global gittag v%{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-radixtree
-Version:        2.3
+Name:           lua-resty-pubsub
+Version:        1.1
 Release:        1%{?dist}
-Summary:        Adaptive Radix Trees implemented in Lua / LuaJIT
+Summary:        Lua Pubsub client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/api7/lua-resty-radixtree
+URL:            https://github.com/wingify/lua-resty-pubsub
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
