@@ -1,2 +1,2 @@
-repo: jamesmarlowe/lua-resty-hmac
-summary: Lua driver for making and receiving hmac signed requests
+repo: jkeys089/lua-resty-hmac
+summary: HMAC functions for nginx-module-lua and LuaJIT

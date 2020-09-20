@@ -4,16 +4,16 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag v%{version}
-%global gittag_nov %{version}
+%global gittag v0.05
+%global gittag_nov 0.05
 
 Name:           lua-resty-hmac
-Version:        1.0
+Version:        0.5
 Release:        1%{?dist}
-Summary:        Lua driver for making and receiving hmac signed requests
+Summary:        HMAC functions for nginx-module-lua and LuaJIT
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/jamesmarlowe/lua-resty-hmac
+URL:            https://github.com/jkeys089/lua-resty-hmac
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -46,10 +46,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 
 %files
 %{luapkgdir}/*
-# Virtually add license macro for EL6:
-%{!?_licensedir:%global license %%doc}
-%license LICENSE
-%doc README.md
+%doc README.markdown
 
 
 %changelog
