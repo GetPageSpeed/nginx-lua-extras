@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-healthcheck
-Version:        1.3.0
+Version:        2.0.0
 Release:        1%{?dist}
 Summary:        Healthcheck library for nginx-module-lua to validate upstream service status
 Group:          Development/Libraries
@@ -49,7 +49,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
 %license LICENSE
-%doc readme.md
+%doc README.md
 
 
 %changelog
