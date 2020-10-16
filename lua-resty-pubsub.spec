@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-pubsub
-Version:        1.2
+Version:        1.3
 Release:        1%{?dist}
 Summary:        Lua Pubsub client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
