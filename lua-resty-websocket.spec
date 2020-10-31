@@ -4,11 +4,11 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag v0.07
-%global gittag_nov 0.07
+%global gittag v0.08
+%global gittag_nov 0.08
 
 Name:           lua-resty-websocket
-Version:        0.7
+Version:        0.8
 Release:        1%{?dist}
 Summary:        WebSocket support for nginx-module-lua module
 Group:          Development/Libraries
