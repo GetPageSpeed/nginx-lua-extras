@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-core
-Version:        0.1.20
+Version:        0.1.21
 Release:        1%{?dist}
 Summary:        New FFI-based API for lua-nginx-module
 Group:          Development/Libraries
