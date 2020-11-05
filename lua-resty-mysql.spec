@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-mysql
-Version:        0.22
+Version:        0.23
 Release:        1%{?dist}
 Summary:        Nonblocking Lua MySQL driver library for nginx-module-lua
 Group:          Development/Libraries
