@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-timer
-Version:        1.0.0
+Version:        1.1.0
 Release:        1%{?dist}
 Summary:        Extended timers for nginx-module-lua
 Group:          Development/Libraries
