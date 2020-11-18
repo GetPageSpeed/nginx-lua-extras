@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-openidc
-Version:        1.7.3
+Version:        1.7.4
 Release:        1%{?dist}
 Summary:        OpenID Connect Relying Party and OAuth 2.0 Resource Server implementation in Lua for NGINX / nginx-module-lua
 Group:          Development/Libraries
