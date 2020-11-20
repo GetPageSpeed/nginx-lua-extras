@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-mlcache
-Version:        2.4.1
+Version:        2.5.0
 Release:        1%{?dist}
 Summary:        Layered caching library for nginx-module-lua
 Group:          Development/Libraries
