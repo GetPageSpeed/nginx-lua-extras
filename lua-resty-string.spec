@@ -9,7 +9,7 @@
 
 Name:           lua-resty-string
 Version:        0.12
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        String utilities and common hash functions for nginx-module-lua and LuaJIT
 Group:          Development/Libraries
 License:        BSD

@@ -9,7 +9,7 @@
 
 Name:           lua-resty-woothee
 Version:        1.11.0.post1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Woothee Lua-nginx-module-lua implementation
 Group:          Development/Libraries
 License:        BSD

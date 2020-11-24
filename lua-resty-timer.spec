@@ -9,7 +9,7 @@
 
 Name:           lua-resty-timer
 Version:        1.1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Extended timers for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

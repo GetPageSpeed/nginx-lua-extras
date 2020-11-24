@@ -9,7 +9,7 @@
 
 Name:           lua-resty-radixtree
 Version:        2.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Adaptive Radix Trees implemented in Lua / LuaJIT
 Group:          Development/Libraries
 License:        BSD

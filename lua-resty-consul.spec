@@ -9,7 +9,7 @@
 
 Name:           lua-resty-consul
 Version:        0.3.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Library to interface with the consul HTTP API from nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
@@ -22,6 +22,8 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+
+Requires:       lua-resty-http
 BuildArch:      noarch
 
 %description

@@ -9,7 +9,7 @@
 
 Name:           lua-resty-libr3
 Version:        1.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        High-performance path dispatching library base on libr3 for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

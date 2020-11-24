@@ -9,7 +9,7 @@
 
 Name:           lua-resty-httpipe
 Version:        0.5
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua HTTP client cosocket driver for nginx-module-lua, interfaces are more flexible
 Group:          Development/Libraries
 License:        BSD

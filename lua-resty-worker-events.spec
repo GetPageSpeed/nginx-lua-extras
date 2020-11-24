@@ -9,7 +9,7 @@
 
 Name:           lua-resty-worker-events
 Version:        2.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Cross Worker Events for NGINX in Pure Lua
 Group:          Development/Libraries
 License:        BSD

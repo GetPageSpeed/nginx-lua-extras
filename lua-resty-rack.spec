@@ -9,7 +9,7 @@
 
 Name:           lua-resty-rack
 Version:        0.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A simple and extensible HTTP server framework for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

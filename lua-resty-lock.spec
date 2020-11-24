@@ -9,7 +9,7 @@
 
 Name:           lua-resty-lock
 Version:        0.8
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Simple nonblocking lock API for nginx-module-lua based on shared memory dictionaries
 Group:          Development/Libraries
 License:        BSD

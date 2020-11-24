@@ -9,7 +9,7 @@
 
 Name:           lua-resty-uuid
 Version:        1.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        LuaJIT FFI bindings for libuuid, a DCE compatible Universally Unique Identifier library
 Group:          Development/Libraries
 License:        BSD

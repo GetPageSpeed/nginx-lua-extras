@@ -9,7 +9,7 @@
 
 Name:           lua-resty-riak
 Version:        2.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua riak protocol buffer client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
 License:        BSD

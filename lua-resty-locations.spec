@@ -9,7 +9,7 @@
 
 Name:           lua-resty-locations
 Version:        0.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua library implementing nginx style location uri matching
 Group:          Development/Libraries
 License:        BSD

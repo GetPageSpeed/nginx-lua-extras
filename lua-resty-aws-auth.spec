@@ -9,7 +9,7 @@
 
 Name:           lua-resty-aws-auth
 Version:        0.12.post0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua resty module to calculate AWS signature v4 authorization header
 Group:          Development/Libraries
 License:        BSD

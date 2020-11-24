@@ -9,7 +9,7 @@
 
 Name:           lua-resty-healthcheck
 Version:        2.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Healthcheck library for nginx-module-lua to validate upstream service status
 Group:          Development/Libraries
 License:        BSD

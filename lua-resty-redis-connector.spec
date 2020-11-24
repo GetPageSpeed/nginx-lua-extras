@@ -9,7 +9,7 @@
 
 Name:           lua-resty-redis-connector
 Version:        0.10
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Connection utilities for lua-resty-redis
 Group:          Development/Libraries
 License:        BSD

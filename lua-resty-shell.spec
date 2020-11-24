@@ -9,7 +9,7 @@
 
 Name:           lua-resty-shell
 Version:        0.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua module for nonblocking system shell command executions
 Group:          Development/Libraries
 License:        BSD

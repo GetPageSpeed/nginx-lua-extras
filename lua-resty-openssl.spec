@@ -9,7 +9,7 @@
 
 Name:           lua-resty-openssl
 Version:        0.6.9
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        FFI-based OpenSSL binding for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

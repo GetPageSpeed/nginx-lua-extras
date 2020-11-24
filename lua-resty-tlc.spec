@@ -9,7 +9,7 @@
 
 Name:           lua-resty-tlc
 Version:        0.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        General two level cache (lrucache + shared dict)
 Group:          Development/Libraries
 License:        BSD

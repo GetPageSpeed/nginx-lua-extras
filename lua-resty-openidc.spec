@@ -9,7 +9,7 @@
 
 Name:           lua-resty-openidc
 Version:        1.7.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        OpenID Connect Relying Party and OAuth 2.0 Resource Server implementation in Lua for NGINX / nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
@@ -22,6 +22,10 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+
+Requires:       lua-resty-http >= 0.13
+Requires:       lua-resty-session >= 2.8
+Requires:       lua-resty-jwt >= 0.2.0
 BuildArch:      noarch
 
 %description

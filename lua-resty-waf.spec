@@ -9,7 +9,7 @@
 
 Name:           lua-resty-waf
 Version:        0.11.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        High-performance WAF built on nginx-module-lua stack
 Group:          Development/Libraries
 License:        BSD
@@ -22,6 +22,10 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+
+Requires:       lua-resty-iputils
+Requires:       lua-resty-cookie
+Requires:       lua-resty-logger-socket
 BuildArch:      noarch
 
 %description

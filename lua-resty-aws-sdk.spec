@@ -9,7 +9,7 @@
 
 Name:           lua-resty-aws-sdk
 Version:        0.1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Make api call to aws services
 Group:          Development/Libraries
 License:        BSD

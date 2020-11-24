@@ -9,7 +9,7 @@
 
 Name:           lua-resty-dns-server
 Version:        0.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua DNS server driver for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

@@ -9,7 +9,7 @@
 
 Name:           lua-resty-core
 Version:        0.1.21
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        New FFI-based API for lua-nginx-module
 Group:          Development/Libraries
 License:        BSD
@@ -23,11 +23,7 @@ Requires:       lua >= %{luaver}
 %endif
 
 
-Requires:       lua-resty-lrucache
-
-Obsoletes:      lua-resty <= 0.1.17
-
-Provides:       lua-resty = %{version}
+Requires:       lua-resty-lrucache >= 0.8
 BuildArch:      noarch
 
 %description

@@ -9,7 +9,7 @@
 
 Name:           lua-resty-acme
 Version:        0.5.8
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Automatic Let's Encrypt certificate serving and Lua implementation of ACMEv2 procotol
 Group:          Development/Libraries
 License:        BSD
@@ -22,6 +22,10 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+
+Requires:       lua-resty-lrucache >= 0.8
+Requires:       lua-resty-http >= 0.12
+Requires:       lua-resty-openssl >= 0.5.2
 BuildArch:      noarch
 
 %description

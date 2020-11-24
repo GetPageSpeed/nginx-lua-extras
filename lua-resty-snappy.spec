@@ -9,7 +9,7 @@
 
 Name:           lua-resty-snappy
 Version:        1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        LuaJIT FFI bindings for Snappy, a fast compressor/decompressor (https://code.google.com/p/snappy/)
 Group:          Development/Libraries
 License:        BSD

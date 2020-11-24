@@ -9,7 +9,7 @@
 
 Name:           lua-resty-http2
 Version:        1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        The HTTP/2 Protocol (Client Side) Implementation for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

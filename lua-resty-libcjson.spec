@@ -9,7 +9,7 @@
 
 Name:           lua-resty-libcjson
 Version:        1.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        LuaJIT FFI-based cJSON library for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

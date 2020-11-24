@@ -9,7 +9,7 @@
 
 Name:           lua-resty-redis-ratelimit
 Version:        0.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Limit the request processing rate between multiple NGINX instances backed by Redis
 Group:          Development/Libraries
 License:        BSD

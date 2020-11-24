@@ -9,7 +9,7 @@
 
 Name:           lua-resty-fileinfo
 Version:        1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        LuaJIT FFI bindings to libmagic, magic number recognition library - tries to determine file types
 Group:          Development/Libraries
 License:        BSD

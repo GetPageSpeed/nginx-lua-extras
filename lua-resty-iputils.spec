@@ -9,7 +9,7 @@
 
 Name:           lua-resty-iputils
 Version:        0.3.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Utility functions for working with IP addresses in nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

@@ -9,7 +9,7 @@
 
 Name:           lua-resty-session
 Version:        3.7
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Session library for nginx-module-lua – flexible and secure
 Group:          Development/Libraries
 License:        BSD
@@ -22,6 +22,8 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+
+Requires:       lua-resty-string
 BuildArch:      noarch
 
 %description

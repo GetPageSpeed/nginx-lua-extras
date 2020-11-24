@@ -9,7 +9,7 @@
 
 Name:           lua-resty-sniproxy
 Version:        0.22
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        SNI Proxy based on stream-lua-nginx-module
 Group:          Development/Libraries
 License:        BSD

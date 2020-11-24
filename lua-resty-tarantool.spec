@@ -9,7 +9,7 @@
 
 Name:           lua-resty-tarantool
 Version:        0.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Library for working with tarantool from nginx with the embedded Lua module or with nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

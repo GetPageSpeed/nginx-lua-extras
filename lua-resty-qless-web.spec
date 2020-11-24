@@ -9,7 +9,7 @@
 
 Name:           lua-resty-qless-web
 Version:        0.5
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Port of Qless' web interface to nginx-module-lua environment
 Group:          Development/Libraries
 License:        BSD
@@ -22,6 +22,9 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+
+Requires:       lua-resty-qless
+Requires:       lua-resty-template
 BuildArch:      noarch
 
 %description

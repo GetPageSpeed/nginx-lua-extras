@@ -9,7 +9,7 @@
 
 Name:           lua-resty-prettycjson
 Version:        1.6
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua cJSON Pretty Formatter
 Group:          Development/Libraries
 License:        BSD

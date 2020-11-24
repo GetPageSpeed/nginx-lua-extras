@@ -9,7 +9,7 @@
 
 Name:           lua-resty-influx
 Version:        0.2.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Nginx-module-lua client for InfluxDB
 Group:          Development/Libraries
 License:        BSD

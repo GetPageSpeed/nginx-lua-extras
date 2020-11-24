@@ -9,7 +9,7 @@
 
 Name:           lua-resty-qless
 Version:        0.11
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua binding to Qless (Queue / Pipeline management) for nginx-module-lua / Redis
 Group:          Development/Libraries
 License:        BSD
@@ -22,6 +22,9 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+
+Requires:       lua-resty-redis
+Requires:       lua-resty-redis-connector >= 0.4
 BuildArch:      noarch
 
 %description

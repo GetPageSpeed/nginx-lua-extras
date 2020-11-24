@@ -9,7 +9,7 @@
 
 Name:           lua-resty-exec
 Version:        3.0.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Run external programs in nginx-module-lua without spawning a shell or blocking
 Group:          Development/Libraries
 License:        BSD

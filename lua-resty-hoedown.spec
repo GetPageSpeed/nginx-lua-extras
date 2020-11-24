@@ -9,7 +9,7 @@
 
 Name:           lua-resty-hoedown
 Version:        0.91
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        LuaJIT FFI bindings to Hoedown, a standards compliant, fast, secure markdown processing library in C
 Group:          Development/Libraries
 License:        BSD

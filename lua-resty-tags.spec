@@ -9,7 +9,7 @@
 
 Name:           lua-resty-tags
 Version:        1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A small DSL for building HTML documents
 Group:          Development/Libraries
 License:        BSD

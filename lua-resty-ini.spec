@@ -9,7 +9,7 @@
 
 Name:           lua-resty-ini
 Version:        0.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Ini parser for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

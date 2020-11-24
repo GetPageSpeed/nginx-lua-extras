@@ -9,7 +9,7 @@
 
 Name:           lua-resty-limit-rate
 Version:        0.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua module for limiting request rate for nginx-module-lua, using the "token bucket" method
 Group:          Development/Libraries
 License:        BSD

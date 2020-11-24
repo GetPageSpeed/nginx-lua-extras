@@ -9,7 +9,7 @@
 
 Name:           lua-resty-counter
 Version:        0.2.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lock-free counter for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

@@ -9,7 +9,7 @@
 
 Name:           lua-resty-maxminddb
 Version:        1.3.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A Lua library for reading MaxMind's Geolocation database
 Group:          Development/Libraries
 License:        BSD

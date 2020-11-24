@@ -9,7 +9,7 @@
 
 Name:           lua-resty-nettle
 Version:        1.5
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        LuaJIT FFI bindings for Nettle (a low-level cryptographic library)
 Group:          Development/Libraries
 License:        BSD

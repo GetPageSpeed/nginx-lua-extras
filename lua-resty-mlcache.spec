@@ -9,7 +9,7 @@
 
 Name:           lua-resty-mlcache
 Version:        2.5.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Layered caching library for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

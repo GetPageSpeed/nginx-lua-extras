@@ -9,7 +9,7 @@
 
 Name:           lua-resty-balancer
 Version:        0.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A generic consistent hash implementation for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

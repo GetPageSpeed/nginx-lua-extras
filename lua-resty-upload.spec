@@ -9,7 +9,7 @@
 
 Name:           lua-resty-upload
 Version:        0.10
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Streaming reader and parser for http file uploading based on nginx-module-lua cosocket
 Group:          Development/Libraries
 License:        BSD

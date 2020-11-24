@@ -9,7 +9,7 @@
 
 Name:           lua-resty-mysql
 Version:        0.23
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Nonblocking Lua MySQL driver library for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

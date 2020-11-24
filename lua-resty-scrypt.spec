@@ -9,7 +9,7 @@
 
 Name:           lua-resty-scrypt
 Version:        1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        LuaJIT FFI-based scrypt library for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

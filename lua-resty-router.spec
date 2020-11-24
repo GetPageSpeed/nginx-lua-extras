@@ -9,7 +9,7 @@
 
 Name:           lua-resty-router
 Version:        0.1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua http router for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

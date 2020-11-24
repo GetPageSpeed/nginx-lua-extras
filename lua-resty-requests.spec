@@ -9,7 +9,7 @@
 
 Name:           lua-resty-requests
 Version:        0.7.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Yet Another HTTP library for nginx-module-lua - For human beings!
 Group:          Development/Libraries
 License:        BSD

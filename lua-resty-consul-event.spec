@@ -9,7 +9,7 @@
 
 Name:           lua-resty-consul-event
 Version:        0.3.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Consul Events HTTP API Wrapper
 Group:          Development/Libraries
 License:        BSD

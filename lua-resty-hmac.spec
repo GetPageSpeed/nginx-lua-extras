@@ -9,7 +9,7 @@
 
 Name:           lua-resty-hmac
 Version:        0.5
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        HMAC functions for nginx-module-lua and LuaJIT
 Group:          Development/Libraries
 License:        BSD
@@ -22,6 +22,8 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+
+Requires:       lua-resty-string >= 0.8
 BuildArch:      noarch
 
 %description

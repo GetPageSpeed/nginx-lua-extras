@@ -9,7 +9,7 @@
 
 Name:           lua-resty-murmurhash2
 Version:        1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        LuaJIT MurmurHash 2 bindings to NGINX / nginx-module-lua murmurhash2 implementation
 Group:          Development/Libraries
 License:        BSD

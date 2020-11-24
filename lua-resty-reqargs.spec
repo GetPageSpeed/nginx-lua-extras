@@ -9,7 +9,7 @@
 
 Name:           lua-resty-reqargs
 Version:        1.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Read application/x-www-form-urlencoded, multipart/form-data, and application/json request args
 Group:          Development/Libraries
 License:        BSD
@@ -22,6 +22,8 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+
+Requires:       lua-resty-upload
 BuildArch:      noarch
 
 %description

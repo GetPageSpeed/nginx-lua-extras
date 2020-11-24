@@ -9,7 +9,7 @@
 
 Name:           lua-resty-signal
 Version:        0.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua library for killing or sending signals to UNIX processes
 Group:          Development/Libraries
 License:        BSD

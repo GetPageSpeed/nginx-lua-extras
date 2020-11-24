@@ -9,7 +9,7 @@
 
 Name:           lua-resty-ftpclient
 Version:        1.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua ftp client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
 License:        BSD

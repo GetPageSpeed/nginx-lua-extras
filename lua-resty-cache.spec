@@ -9,7 +9,7 @@
 
 Name:           lua-resty-cache
 Version:        1.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Http cache to redis, can server stale response, and using "lua-resty-lock" only allow one request to populate a new cache
 Group:          Development/Libraries
 License:        BSD

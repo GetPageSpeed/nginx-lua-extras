@@ -9,7 +9,7 @@
 
 Name:           lua-resty-logger-socket
 Version:        0.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Raw-socket-based Logger Library for NGINX (based on nginx-module-lua)
 Group:          Development/Libraries
 License:        BSD

@@ -9,7 +9,7 @@
 
 Name:           lua-resty-etcd
 Version:        1.4.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Nonblocking Lua etcd driver library for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

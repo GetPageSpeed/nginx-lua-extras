@@ -9,7 +9,7 @@
 
 Name:           lua-resty-kafka
 Version:        0.9
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua kafka client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
 License:        BSD

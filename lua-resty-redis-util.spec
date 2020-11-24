@@ -9,7 +9,7 @@
 
 Name:           lua-resty-redis-util
 Version:        0.0.5
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Nginx-module-lua-resty-redis 封装工具类
 Group:          Development/Libraries
 License:        BSD

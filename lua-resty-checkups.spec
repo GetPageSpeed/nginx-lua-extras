@@ -9,7 +9,7 @@
 
 Name:           lua-resty-checkups
 Version:        0.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Manage NGINX upstreams in pure Lua
 Group:          Development/Libraries
 License:        BSD

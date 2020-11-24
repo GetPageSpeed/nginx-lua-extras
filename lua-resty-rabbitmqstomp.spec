@@ -9,7 +9,7 @@
 
 Name:           lua-resty-rabbitmqstomp
 Version:        0.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Opinionated Lua RabbitMQ client library for nginx-module-lua apps based on the cosocket API
 Group:          Development/Libraries
 License:        BSD

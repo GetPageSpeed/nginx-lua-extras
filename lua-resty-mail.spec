@@ -9,7 +9,7 @@
 
 Name:           lua-resty-mail
 Version:        1.0.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A high-level, easy to use, and non-blocking email and SMTP library for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

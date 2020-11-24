@@ -9,7 +9,7 @@
 
 Name:           lua-resty-jump-consistent-hash
 Version:        0.1.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Consistent hash for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

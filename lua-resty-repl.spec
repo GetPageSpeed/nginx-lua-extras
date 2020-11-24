@@ -4,12 +4,12 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag 0.01
-%global gittag_nov 0.01
+%global gittag v0.0.6-0
+%global gittag_nov 0.0.6-0
 
 Name:           lua-resty-repl
-Version:        0.1
-Release:        1%{?dist}
+Version:        0.0.6.post0
+Release:        2%{?dist}
 Summary:        Interactive console (REPL) for nginx-module-lua and luajit code
 Group:          Development/Libraries
 License:        BSD
@@ -46,9 +46,6 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 
 %files
 %{luapkgdir}/*
-# Virtually add license macro for EL6:
-%{!?_licensedir:%global license %%doc}
-%license LICENSE
 %doc README.md
 
 

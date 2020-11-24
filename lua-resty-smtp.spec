@@ -9,7 +9,7 @@
 
 Name:           lua-resty-smtp
 Version:        0.0.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Send mail with NGINX
 Group:          Development/Libraries
 License:        BSD

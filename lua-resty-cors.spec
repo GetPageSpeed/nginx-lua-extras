@@ -9,7 +9,7 @@
 
 Name:           lua-resty-cors
 Version:        0.2.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        It's the implement of CORS on nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

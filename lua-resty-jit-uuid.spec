@@ -9,7 +9,7 @@
 
 Name:           lua-resty-jit-uuid
 Version:        0.0.7
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Fast and dependency-free UUID library for LuaJIT/nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

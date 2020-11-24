@@ -9,7 +9,7 @@
 
 Name:           lua-resty-upstream
 Version:        0.10
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Upstream connection load balancing and failover module for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
@@ -22,6 +22,8 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+
+Requires:       lua-resty-http
 BuildArch:      noarch
 
 %description

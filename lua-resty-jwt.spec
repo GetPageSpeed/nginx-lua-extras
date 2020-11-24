@@ -9,7 +9,7 @@
 
 Name:           lua-resty-jwt
 Version:        0.1.11
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        JWT For The Great nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
@@ -22,6 +22,8 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+
+Requires:       lua-resty-hmac >= 0.1
 BuildArch:      noarch
 
 %description

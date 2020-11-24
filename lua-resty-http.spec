@@ -9,7 +9,7 @@
 
 Name:           lua-resty-http
 Version:        0.15
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lua HTTP client cosocket driver for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

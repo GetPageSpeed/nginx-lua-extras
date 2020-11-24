@@ -9,7 +9,7 @@
 
 Name:           lua-resty-injection
 Version:        1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        LuaJIT FFI bindings to libinjection (https://github.com/client9/libinjection)
 Group:          Development/Libraries
 License:        BSD

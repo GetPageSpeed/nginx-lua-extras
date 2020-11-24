@@ -9,7 +9,7 @@
 
 Name:           lua-resty-template
 Version:        2.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Templating Engine (HTML) for Lua and nginx-module-lua
 Group:          Development/Libraries
 License:        BSD

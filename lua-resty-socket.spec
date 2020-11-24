@@ -9,7 +9,7 @@
 
 Name:           lua-resty-socket
 Version:        1.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Automatic LuaSocket/cosockets compatibility module
 Group:          Development/Libraries
 License:        BSD

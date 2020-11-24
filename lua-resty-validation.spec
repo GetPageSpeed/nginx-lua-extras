@@ -9,7 +9,7 @@
 
 Name:           lua-resty-validation
 Version:        2.7
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Validation Library (Input Validation and Filtering) for Lua and nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
