@@ -1,2 +1,4 @@
 repo: SkyLothar/lua-resty-jwt
+requires:
+- lua-resty-hmac >= 0.1
 summary: JWT For The Great nginx-module-lua

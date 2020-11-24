@@ -1,3 +1,6 @@
 repo: ledgetech/lua-resty-qless
+requires:
+- lua-resty-redis
+- lua-resty-redis-connector >= 0.4
 summary: Lua binding to Qless (Queue / Pipeline management) for nginx-module-lua /
   Redis

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+import configparser
 from github import Github
 from github.GithubException import UnknownObjectException, GithubException
 import os
@@ -86,6 +86,31 @@ for repo in repositories:
         'repo': repo.full_name,
         'summary': summary
     }
+
+    try:
+        contents = repo.get_contents('dist.ini')
+    except (UnknownObjectException, GithubException):
+        log.warning(f"Has no dist.ini")
+    else:
+        contents = '[config]\n' + contents.decoded_content.decode("utf-8")
+        config = configparser.ConfigParser()
+        config.read_string(contents)
+        print(contents)
+        requires = config.get('config', 'requires', fallback=None)
+        if requires:
+            # replace bad versions like 0.08 with 0.8
+            requires = re.sub('0\.0(\d)', r"0.\1", requires)
+            requires = requires.split(',')
+            requires_found = []
+            for r in requires:
+                parts = r.split('/')
+                r = parts[-1].strip()
+                if r.startswith('lua-resty-'):
+                    requires_found.append(r)
+            print(requires)
+            print(requires_found)
+            if requires_found:
+                dict_file['requires'] = requires_found
 
     with open(filename, 'w', encoding='utf8') as file:
         documents = yaml.dump(dict_file, file)

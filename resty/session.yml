@@ -1,2 +1,4 @@
 repo: bungle/lua-resty-session
+requires:
+- lua-resty-string
 summary: "Session library for nginx-module-lua \u2013 flexible and secure"

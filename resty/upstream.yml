@@ -1,2 +1,4 @@
 repo: hamishforbes/lua-resty-upstream
+requires:
+- lua-resty-http
 summary: Upstream connection load balancing and failover module for nginx-module-lua

@@ -1,3 +1,7 @@
 repo: fffonion/lua-resty-acme
+requires:
+- lua-resty-lrucache >= 0.8
+- lua-resty-http >= 0.12
+- lua-resty-openssl >= 0.5.2
 summary: Automatic Let's Encrypt certificate serving and Lua implementation of ACMEv2
   procotol

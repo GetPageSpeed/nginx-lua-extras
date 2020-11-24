@@ -1,2 +1,4 @@
 repo: jkeys089/lua-resty-hmac
+requires:
+- lua-resty-string >= 0.8
 summary: HMAC functions for nginx-module-lua and LuaJIT
