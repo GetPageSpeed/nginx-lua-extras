@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-acme
-Version:        0.5.10
+Version:        0.5.11
 Release:        2%{?dist}
 Summary:        Automatic Let's Encrypt certificate serving and Lua implementation of ACMEv2 procotol
 Group:          Development/Libraries
