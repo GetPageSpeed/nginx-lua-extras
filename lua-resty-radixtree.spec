@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-radixtree
-Version:        2.6
+Version:        2.6.1
 Release:        2%{?dist}
 Summary:        Adaptive Radix Trees implemented in Lua / LuaJIT
 Group:          Development/Libraries
