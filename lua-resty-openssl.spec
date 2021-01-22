@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-openssl
-Version:        0.6.10
+Version:        0.6.11
 Release:        2%{?dist}
 Summary:        FFI-based OpenSSL binding for nginx-module-lua
 Group:          Development/Libraries
