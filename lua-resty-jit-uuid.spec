@@ -7,13 +7,13 @@
 %global gittag %{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-openssl
-Version:        0.7.1
+Name:           lua-resty-jit-uuid
+Version:        0.0.7
 Release:        2%{?dist}
-Summary:        FFI-based OpenSSL binding for nginx-module-lua
+Summary:        Fast and dependency-free UUID library for LuaJIT/nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/fffonion/lua-resty-openssl
+URL:            https://github.com/thibaultcha/lua-resty-jit-uuid
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7

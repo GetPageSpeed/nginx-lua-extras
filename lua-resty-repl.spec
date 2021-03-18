@@ -4,16 +4,16 @@
 %global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
-%global gittag %{version}
-%global gittag_nov %{version}
+%global gittag 0.01
+%global gittag_nov 0.01
 
-Name:           lua-resty-openssl
-Version:        0.7.1
+Name:           lua-resty-repl
+Version:        0.1
 Release:        2%{?dist}
-Summary:        FFI-based OpenSSL binding for nginx-module-lua
+Summary:        Interactive console (REPL) for nginx-module-lua and luajit code
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/fffonion/lua-resty-openssl
+URL:            https://github.com/saks/lua-resty-repl
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7

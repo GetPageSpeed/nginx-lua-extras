@@ -7,13 +7,13 @@
 %global gittag %{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-openssl
-Version:        0.7.1
+Name:           lua-resty-sniproxy
+Version:        0.22
 Release:        2%{?dist}
-Summary:        FFI-based OpenSSL binding for nginx-module-lua
+Summary:        SNI Proxy based on stream-lua-nginx-module
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/fffonion/lua-resty-openssl
+URL:            https://github.com/fffonion/lua-resty-sniproxy
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -46,9 +46,6 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 
 %files
 %{luapkgdir}/*
-# Virtually add license macro for EL6:
-%{!?_licensedir:%global license %%doc}
-%license LICENSE
 %doc README.md
 
 
