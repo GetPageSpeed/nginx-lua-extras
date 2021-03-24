@@ -8,7 +8,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-resty-etcd
-Version:        1.4.4
+Version:        1.5.0
 Release:        2%{?dist}
 Summary:        Nonblocking Lua etcd driver library for nginx-module-lua
 Group:          Development/Libraries
