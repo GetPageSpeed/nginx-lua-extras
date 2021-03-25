@@ -7,13 +7,13 @@
 %global gittag %{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-openssl
-Version:        0.7.2
+Name:           lua-resty-base-encoding
+Version:        1.3.0
 Release:        2%{?dist}
-Summary:        FFI-based OpenSSL binding for nginx-module-lua
+Summary:        A faster alternative to base64 encoding and provides missing base encoding for nginx-module-lua application
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/fffonion/lua-resty-openssl
+URL:            https://github.com/spacewander/lua-resty-base-encoding
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
