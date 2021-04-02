@@ -1,4 +1,4 @@
 repo: openresty/lua-resty-core
 requires:
-- lua-resty-lrucache >= 0.8
+- resty-lrucache >= 0.8
 summary: New FFI-based API for lua-nginx-module
