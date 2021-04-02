@@ -36,7 +36,6 @@ do
   printf "Checking with rpmlint ...:  "
   # rpmlint -f ./rpmlint.config ./${moduleName}.spec
 done
-exit
 git add --all .
 # at this point we don't know what updated: rpmmacros or spec files, but we check-in all
 git commit -m "Updated"
