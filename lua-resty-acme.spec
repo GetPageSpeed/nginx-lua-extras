@@ -1,15 +1,19 @@
-# OpenResty is compatible with 5.1 only!
-%global luaver 5.1
 %{!?luaver: %global luaver %(lua -e "print(string.sub(_VERSION, 5))" || echo 0)}
-%global lualibdir %{_libdir}/lua/%{luaver}
 %global luapkgdir %{_datadir}/lua/%{luaver}
+%global lualibdir %{_libdir}/lua/%{luaver}
+# OpenResty is compatible with 5.1 only! We must build 5.1 version always, even on <= EL8
+%global luacompatver 5.1
+%global luacompatpkgdir %{_datadir}/lua/%{luacompatver}
+%global luacompatlibdir %{_datadir}/lua/%{luacompatver}
+
+%global luapkgname resty-acme
 
 %global gittag %{version}
 %global gittag_nov %{version}
 
-Name:           lua-resty-acme
+Name:           lua-%{luapkgname}
 Version:        0.6.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Automatic Let's Encrypt certificate serving and Lua implementation of ACMEv2 procotol
 Group:          Development/Libraries
 License:        BSD
@@ -22,14 +26,29 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
+%if 0%{?fedora} || 0%{?rhel} > 7
+BuildRequires:  compat-lua >= %{luacompatver}, compat-lua-devel >= %{luacompatver}
+Requires:       lua(abi) = %{luacompatver}
+%endif
+
 
 Requires:       lua-resty-lrucache >= 0.8
-Requires:       lua-resty-http >= 0.12
-Requires:       lua-resty-openssl >= 0.7.0
+Requires:       lua-lua-resty-http >= 0.12
+Requires:       lua-lua-resty-openssl >= 0.7.0
 BuildArch:      noarch
 
 %description
 %{summary}.
+
+%if 0%{?fedora} || 0%{?rhel} > 7
+%package -n lua%{luacompatver}-%{luapkgname}
+Summary:        Automatic Let's Encrypt certificate serving and Lua implementation of ACMEv2 procotol for Lua %{luacompatver}
+Requires:       lua%{luacompatver}-resty-lrucache >= 0.8
+Requires:       lua%{luacompatver}-lua-resty-http >= 0.12
+Requires:       lua%{luacompatver}-lua-resty-openssl >= 0.7.0
+%description -n lua%{luacompatver}-%{luapkgname}
+%{summary}.
+%endif
 
 
 %prep
@@ -44,13 +63,26 @@ BuildArch:      noarch
 mkdir -p $RPM_BUILD_ROOT%{luapkgdir}
 cp -pr lib/* $RPM_BUILD_ROOT%{luapkgdir}
 
+%if 0%{?fedora} || 0%{?rhel} > 7
+mkdir -p $RPM_BUILD_ROOT%{luacompatpkgdir}
+cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
+%endif
+
 
 %check
-
+# nothing to do
 
 %files
 %{luapkgdir}/*
 %doc README.md
+
+
+%if 0%{?fedora} || 0%{?rhel} > 7
+%files -n lua%{luacompatver}-%{luapkgname}
+%{luacompatpkgdir}/*
+%doc README.md
+%endif
+
 
 
 %changelog
