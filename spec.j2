@@ -26,8 +26,9 @@ Requires:       lua(abi) = %{luaver}
 Requires:       lua >= %{luaver}
 %endif
 
-%if 0%{?fedora} || 0%{?rhel} >= 8
+%if 0%{?fedora} || 0%{?rhel} > 7
 BuildRequires:  compat-lua >= %{luacompatver}, compat-lua-devel >= %{luacompatver}
+Requires:       lua(abi) = %{luacompatver}
 %endif
 
 {% if requires is defined and requires is iterable %}
@@ -55,7 +56,7 @@ BuildArch:      noarch
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
-Summary:         {{ summary }} for Lua %{luacompatver}
+Summary:        {{ summary }} for Lua %{luacompatver}
 {% if requires is defined and requires is iterable -%}
 {% for r in requires -%}
 Requires:       lua%{luacompatver}-{{ r }}
