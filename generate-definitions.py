@@ -106,7 +106,7 @@ for repo in repositories:
                 parts = r.split('/')
                 r = parts[-1].strip()
                 if r.startswith('lua-resty-'):
-                    requires_found.append(r)
+                    requires_found.append(r.replace('lua-', ''))
             print(requires)
             print(requires_found)
             if requires_found:
