@@ -32,7 +32,7 @@ Requires:       lua(abi) = %{luacompatver}
 %endif
 
 
-Requires:       lua-lua-resty-string
+Requires:       lua-resty-string
 BuildArch:      noarch
 
 %description
@@ -41,7 +41,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Session library for nginx-module-lua – flexible and secure for Lua %{luacompatver}
-Requires:       lua%{luacompatver}-lua-resty-string
+Requires:       lua%{luacompatver}-resty-string
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif

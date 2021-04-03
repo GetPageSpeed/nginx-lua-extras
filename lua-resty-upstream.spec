@@ -32,7 +32,7 @@ Requires:       lua(abi) = %{luacompatver}
 %endif
 
 
-Requires:       lua-lua-resty-http
+Requires:       lua-resty-http
 BuildArch:      noarch
 
 %description
@@ -41,7 +41,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Upstream connection load balancing and failover module for nginx-module-lua for Lua %{luacompatver}
-Requires:       lua%{luacompatver}-lua-resty-http
+Requires:       lua%{luacompatver}-resty-http
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif

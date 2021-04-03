@@ -32,8 +32,8 @@ Requires:       lua(abi) = %{luacompatver}
 %endif
 
 
-Requires:       lua-lua-resty-redis
-Requires:       lua-lua-resty-redis-connector >= 0.4
+Requires:       lua-resty-redis
+Requires:       lua-resty-redis-connector >= 0.4
 BuildArch:      noarch
 
 %description
@@ -42,8 +42,8 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Lua binding to Qless (Queue / Pipeline management) for nginx-module-lua / Redis for Lua %{luacompatver}
-Requires:       lua%{luacompatver}-lua-resty-redis
-Requires:       lua%{luacompatver}-lua-resty-redis-connector >= 0.4
+Requires:       lua%{luacompatver}-resty-redis
+Requires:       lua%{luacompatver}-resty-redis-connector >= 0.4
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif

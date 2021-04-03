@@ -33,8 +33,8 @@ Requires:       lua(abi) = %{luacompatver}
 
 
 Requires:       lua-resty-lrucache >= 0.8
-Requires:       lua-lua-resty-http >= 0.12
-Requires:       lua-lua-resty-openssl >= 0.7.0
+Requires:       lua-resty-http >= 0.12
+Requires:       lua-resty-openssl >= 0.7.0
 BuildArch:      noarch
 
 %description
@@ -44,8 +44,8 @@ BuildArch:      noarch
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Automatic Let's Encrypt certificate serving and Lua implementation of ACMEv2 procotol for Lua %{luacompatver}
 Requires:       lua%{luacompatver}-resty-lrucache >= 0.8
-Requires:       lua%{luacompatver}-lua-resty-http >= 0.12
-Requires:       lua%{luacompatver}-lua-resty-openssl >= 0.7.0
+Requires:       lua%{luacompatver}-resty-http >= 0.12
+Requires:       lua%{luacompatver}-resty-openssl >= 0.7.0
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif

@@ -32,9 +32,9 @@ Requires:       lua(abi) = %{luacompatver}
 %endif
 
 
-Requires:       lua-lua-resty-http >= 0.13
-Requires:       lua-lua-resty-session >= 2.8
-Requires:       lua-lua-resty-jwt >= 0.2.0
+Requires:       lua-resty-http >= 0.13
+Requires:       lua-resty-session >= 2.8
+Requires:       lua-resty-jwt >= 0.2.0
 BuildArch:      noarch
 
 %description
@@ -43,9 +43,9 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        OpenID Connect Relying Party and OAuth 2.0 Resource Server implementation in Lua for NGINX / nginx-module-lua for Lua %{luacompatver}
-Requires:       lua%{luacompatver}-lua-resty-http >= 0.13
-Requires:       lua%{luacompatver}-lua-resty-session >= 2.8
-Requires:       lua%{luacompatver}-lua-resty-jwt >= 0.2.0
+Requires:       lua%{luacompatver}-resty-http >= 0.13
+Requires:       lua%{luacompatver}-resty-session >= 2.8
+Requires:       lua%{luacompatver}-resty-jwt >= 0.2.0
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif

@@ -32,7 +32,7 @@ Requires:       lua(abi) = %{luacompatver}
 %endif
 
 
-Requires:       lua-lua-resty-string >= 0.8
+Requires:       lua-resty-string >= 0.8
 BuildArch:      noarch
 
 %description
@@ -41,7 +41,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        HMAC functions for nginx-module-lua and LuaJIT for Lua %{luacompatver}
-Requires:       lua%{luacompatver}-lua-resty-string >= 0.8
+Requires:       lua%{luacompatver}-resty-string >= 0.8
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif

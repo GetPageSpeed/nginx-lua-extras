@@ -32,7 +32,7 @@ Requires:       lua(abi) = %{luacompatver}
 %endif
 
 
-Requires:       lua-lua-resty-hmac >= 0.1
+Requires:       lua-resty-hmac >= 0.1
 BuildArch:      noarch
 
 %description
@@ -41,7 +41,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        JWT For The Great nginx-module-lua for Lua %{luacompatver}
-Requires:       lua%{luacompatver}-lua-resty-hmac >= 0.1
+Requires:       lua%{luacompatver}-resty-hmac >= 0.1
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif

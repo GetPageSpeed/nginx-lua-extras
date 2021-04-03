@@ -32,8 +32,8 @@ Requires:       lua(abi) = %{luacompatver}
 %endif
 
 
-Requires:       lua-lua-resty-qless
-Requires:       lua-lua-resty-template
+Requires:       lua-resty-qless
+Requires:       lua-resty-template
 BuildArch:      noarch
 
 %description
@@ -42,8 +42,8 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Port of Qless' web interface to nginx-module-lua environment for Lua %{luacompatver}
-Requires:       lua%{luacompatver}-lua-resty-qless
-Requires:       lua%{luacompatver}-lua-resty-template
+Requires:       lua%{luacompatver}-resty-qless
+Requires:       lua%{luacompatver}-resty-template
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif
