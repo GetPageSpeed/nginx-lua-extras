@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        2.0
+Version:        2.1
 Release:        3%{?dist}
 Summary:        LuaJIT FFI bindings for Nettle (a low-level cryptographic library)
 Group:          Development/Libraries
