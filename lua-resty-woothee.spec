@@ -12,7 +12,7 @@
 %global gittag_nov 1.11.0-1
 
 Name:           lua-%{luapkgname}
-Version:        1.11.0.post1
+Version:        1.11.0.1
 Release:        3%{?dist}
 Summary:        Woothee Lua-nginx-module-lua implementation
 Group:          Development/Libraries

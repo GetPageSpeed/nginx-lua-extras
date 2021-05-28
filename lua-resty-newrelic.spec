@@ -12,7 +12,7 @@
 %global gittag_nov 0.01-6
 
 Name:           lua-%{luapkgname}
-Version:        0.1.post6
+Version:        0.1.6
 Release:        3%{?dist}
 Summary:        This Lua library is a luajit ffi-based wrapper around newrelic agent SDK for nginx-module-lua nginx module
 Group:          Development/Libraries
