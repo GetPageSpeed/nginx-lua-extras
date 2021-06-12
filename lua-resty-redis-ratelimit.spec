@@ -31,6 +31,8 @@ BuildRequires:  compat-lua >= %{luacompatver}, compat-lua-devel >= %{luacompatve
 Requires:       lua(abi) = %{luacompatver}
 %endif
 
+
+Requires:       lua-resty-redis
 BuildArch:      noarch
 
 %description
@@ -39,6 +41,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Limit the request processing rate between multiple NGINX instances backed by Redis for Lua %{luacompatver}
+Requires:       lua%{luacompatver}-resty-redis
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif
