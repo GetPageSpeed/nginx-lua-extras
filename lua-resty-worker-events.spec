@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        2.0.0
+Version:        2.0.1
 Release:        3%{?dist}
 Summary:        Cross Worker Events for NGINX in Pure Lua
 Group:          Development/Libraries
