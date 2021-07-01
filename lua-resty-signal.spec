@@ -8,11 +8,11 @@
 
 %global luapkgname resty-signal
 
-%global gittag v0.02
-%global gittag_nov 0.02
+%global gittag v0.03
+%global gittag_nov 0.03
 
 Name:           lua-%{luapkgname}
-Version:        0.2
+Version:        0.3
 Release:        3%{?dist}
 Summary:        Lua library for killing or sending signals to UNIX processes
 Group:          Development/Libraries
