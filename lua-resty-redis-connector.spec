@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.10
+Version:        0.11.0
 Release:        3%{?dist}
 Summary:        Connection utilities for lua-resty-redis
 Group:          Development/Libraries
