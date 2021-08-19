@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.3.2
+Version:        0.4.0
 Release:        3%{?dist}
 Summary:        Library to interface with the consul HTTP API from nginx-module-lua
 Group:          Development/Libraries
