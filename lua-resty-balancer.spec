@@ -8,11 +8,11 @@
 
 %global luapkgname resty-balancer
 
-%global gittag v0.03
-%global gittag_nov 0.03
+%global gittag v0.04
+%global gittag_nov 0.04
 
 Name:           lua-%{luapkgname}
-Version:        0.3
+Version:        0.4
 Release:        3%{?dist}
 Summary:        A generic consistent hash implementation for nginx-module-lua
 Group:          Development/Libraries
