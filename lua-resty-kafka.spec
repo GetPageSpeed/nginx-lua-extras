@@ -8,11 +8,11 @@
 
 %global luapkgname resty-kafka
 
-%global gittag v0.09
-%global gittag_nov 0.09
+%global gittag v%{version}
+%global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.9
+Version:        0.10
 Release:        3%{?dist}
 Summary:        Lua kafka client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
