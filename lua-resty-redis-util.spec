@@ -8,11 +8,11 @@
 
 %global luapkgname resty-redis-util
 
-%global gittag v%{version}
-%global gittag_nov %{version}
+%global gittag v0.07
+%global gittag_nov 0.07
 
 Name:           lua-%{luapkgname}
-Version:        0.0.5
+Version:        0.7
 Release:        3%{?dist}
 Summary:        Nginx-module-lua-resty-redis 封装工具类
 Group:          Development/Libraries
