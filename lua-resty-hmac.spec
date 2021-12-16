@@ -8,11 +8,11 @@
 
 %global luapkgname resty-hmac
 
-%global gittag v0.05
-%global gittag_nov 0.05
+%global gittag v0.06
+%global gittag_nov 0.06
 
 Name:           lua-%{luapkgname}
-Version:        0.5
+Version:        0.6
 Release:        3%{?dist}
 Summary:        HMAC functions for nginx-module-lua and LuaJIT
 Group:          Development/Libraries
