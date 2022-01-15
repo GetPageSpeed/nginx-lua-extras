@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        3.8
+Version:        3.10
 Release:        3%{?dist}
 Summary:        Session library for nginx-module-lua – flexible and secure
 Group:          Development/Libraries
