@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        2.0.0
+Version:        1.5.0
 Release:        3%{?dist}
 Summary:        Healthcheck library for nginx-module-lua to validate upstream service status
 Group:          Development/Libraries
@@ -70,7 +70,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
 %license LICENSE
-%doc README.md
+%doc readme.md
 
 
 %if 0%{?fedora} || 0%{?rhel} > 7
@@ -79,7 +79,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
 %license LICENSE
-%doc README.md
+%doc readme.md
 %endif
 
 
