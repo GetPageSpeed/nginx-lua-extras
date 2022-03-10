@@ -8,7 +8,7 @@ cd "$(dirname "$0")"
 git fetch --all
 git checkout master
 
-# cleanup gitignored stuff (leftovers of previous jobs maybe)
+# cleanup git-ignored stuff (leftovers of previous jobs maybe)
 git clean -fX >/dev/null
 
 # remove spec files for modules no longer built
@@ -35,10 +35,6 @@ for ymlConfig in ./resty/*.yml; do
   printf "Checking with rpmlint ...:  "
   # rpmlint -f ./rpmlint.config ./${moduleName}.spec
 done
-
-# remove problematic packages:
-# lua-resty-newrelic.src: W: invalid-url Source0: https://github.com/saks/lua-resty-newrelic/archive/v0.01-6/lua-resty-newrelic-v0.01-6.tar.gz HTTP Error 300: Multiple Choices
-rm -rf ./lua-resty-newrelic.spec
 
 git add --all .
 # at this point we don't know what updated: rpmmacros or spec files, but we check-in all

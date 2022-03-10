@@ -24,6 +24,10 @@ work_dir = os.path.dirname(__file__)
 
 log.basicConfig(level=log.INFO)
 
+disabled_repos = {
+    'saks/lua-resty-newrelic': 'Downloading release .tar.gz results in a HTTP Error 300: Multiple Choices'
+}
+
 repositories = g.search_repositories(query='lua-resty- in:name stars:>=10 archived:false', sort='stars')
 repo: Repository
 for repo in repositories:
@@ -33,6 +37,9 @@ for repo in repositories:
         continue
     if not repo.description:
         log.warning('Skipping. Has no description')
+        continue
+    if repo.full_name in disabled_repos:
+        log.warning(f"Skipping a bad repo {repo.full_name} because it usually errors. Reason: {disabled_repos[repo.full_name]}")
         continue
     module_name = repo.name.replace('lua-resty-', '')
     filename = os.path.join(work_dir, f'resty/{module_name}.yml')
@@ -99,7 +106,7 @@ for repo in repositories:
         requires = config.get('config', 'requires', fallback=None)
         if requires:
             # replace bad versions like 0.08 with 0.8
-            requires = re.sub('0\.0(\d)', r"0.\1", requires)
+            requires = re.sub(r'0\.0(\d)', r"0.\1", requires)
             requires = requires.split(',')
             requires_found = []
             for r in requires:
