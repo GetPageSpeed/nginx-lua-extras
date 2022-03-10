@@ -1,2 +1,0 @@
-repo: hamishforbes/lua-resty-tlc
-summary: General two level cache (lrucache + shared dict)
