@@ -8,11 +8,11 @@
 
 %global luapkgname resty-websocket
 
-%global gittag v0.08
-%global gittag_nov 0.08
+%global gittag v0.09
+%global gittag_nov 0.09
 
 Name:           lua-%{luapkgname}
-Version:        0.8
+Version:        0.9
 Release:        3%{?dist}
 Summary:        WebSocket support for nginx-module-lua module
 Group:          Development/Libraries
