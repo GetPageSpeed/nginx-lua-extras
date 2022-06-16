@@ -1,0 +1,3 @@
+repo: auto-ssl/lua-resty-auto-ssl
+summary: On the fly (and free) SSL registration and renewal inside nginx-module-lua/nginx
+  with Let's Encrypt
