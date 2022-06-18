@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.11
+Version:        0.13
 Release:        3%{?dist}
 Summary:        Lua-land LRU Cache based on LuaJIT FFI
 Group:          Development/Libraries
