@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.11
+Version:        0.12
 Release:        3%{?dist}
 Summary:        Lua binding to Qless (Queue / Pipeline management) for nginx-module-lua / Redis
 Group:          Development/Libraries
