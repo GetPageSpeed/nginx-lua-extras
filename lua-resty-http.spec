@@ -8,16 +8,16 @@
 
 %global luapkgname resty-http
 
-%global gittag v%{version}
+%global gittag %{version}
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.16.1
+Version:        1.0
 Release:        3%{?dist}
-Summary:        Lua HTTP client cosocket driver for nginx-module-lua
+Summary:        Lua http client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/ledgetech/lua-resty-http
+URL:            https://github.com/liseen/lua-resty-http
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -38,7 +38,7 @@ BuildArch:      noarch
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
-Summary:        Lua HTTP client cosocket driver for nginx-module-lua for Lua %{luacompatver}
+Summary:        Lua http client driver for nginx-module-lua based on the cosocket API for Lua %{luacompatver}
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif
@@ -67,19 +67,13 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %files
 %{luapkgdir}/*
-# Virtually add license macro for EL6:
-%{!?_licensedir:%global license %%doc}
-%license LICENSE
-%doc README.md
+%doc README.markdown
 
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %files -n lua%{luacompatver}-%{luapkgname}
 %{luacompatpkgdir}/*
-# Virtually add license macro for EL6:
-%{!?_licensedir:%global license %%doc}
-%license LICENSE
-%doc README.md
+%doc README.markdown
 %endif
 
 

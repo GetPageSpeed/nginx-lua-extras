@@ -1,2 +1,2 @@
-repo: ledgetech/lua-resty-http
-summary: Lua HTTP client cosocket driver for nginx-module-lua
+repo: liseen/lua-resty-http
+summary: Lua http client driver for nginx-module-lua based on the cosocket API
