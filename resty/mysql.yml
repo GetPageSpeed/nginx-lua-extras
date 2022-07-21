@@ -1,0 +1,2 @@
+repo: openresty/lua-resty-mysql
+summary: Nonblocking Lua MySQL driver library for nginx-module-lua
