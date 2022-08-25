@@ -1,0 +1,2 @@
+repo: Kong/lua-resty-lmdb
+summary: Safe API for manipulating LMDB databases using nginx-module-lua
