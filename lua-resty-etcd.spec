@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        1.8.3
+Version:        1.9.0
 Release:        3%{?dist}
 Summary:        Nonblocking Lua etcd driver library for nginx-module-lua
 Group:          Development/Libraries
