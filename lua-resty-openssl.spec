@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.8.11
+Version:        0.8.13
 Release:        3%{?dist}
 Summary:        FFI-based OpenSSL binding for nginx-module-lua
 Group:          Development/Libraries
