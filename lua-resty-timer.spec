@@ -6,18 +6,18 @@
 %global luacompatpkgdir %{_datadir}/lua/%{luacompatver}
 %global luacompatlibdir %{_datadir}/lua/%{luacompatver}
 
-%global luapkgname resty-openssl
+%global luapkgname resty-timer
 
 %global gittag %{version}
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.8.14
+Version:        1.1.0
 Release:        3%{?dist}
-Summary:        FFI-based OpenSSL binding for nginx-module-lua
+Summary:        Extended timers for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/fffonion/lua-resty-openssl
+URL:            https://github.com/Kong/lua-resty-timer
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -38,7 +38,7 @@ BuildArch:      noarch
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
-Summary:        FFI-based OpenSSL binding for nginx-module-lua for Lua %{luacompatver}
+Summary:        Extended timers for nginx-module-lua for Lua %{luacompatver}
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif

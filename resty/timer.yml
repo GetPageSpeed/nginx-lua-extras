@@ -1,0 +1,2 @@
+repo: Kong/lua-resty-timer
+summary: Extended timers for nginx-module-lua
