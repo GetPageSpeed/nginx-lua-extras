@@ -1,2 +1,0 @@
-repo: wingify/lua-resty-pubsub
-summary: Lua Pubsub client driver for nginx-module-lua based on the cosocket API
