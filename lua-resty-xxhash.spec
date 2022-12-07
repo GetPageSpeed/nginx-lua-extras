@@ -6,18 +6,18 @@
 %global luacompatpkgdir %{_datadir}/lua/%{luacompatver}
 %global luacompatlibdir %{_datadir}/lua/%{luacompatver}
 
-%global luapkgname resty-etcd
+%global luapkgname resty-xxhash
 
 %global gittag v%{version}
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        1.10.1
+Version:        1.0
 Release:        3%{?dist}
-Summary:        Nonblocking Lua etcd driver library for nginx-module-lua
+Summary:        LuaJIT FFI-bindings to xxHash, an Extremely fast non-cryptographic hash algorithm
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/api7/lua-resty-etcd
+URL:            https://github.com/bungle/lua-resty-xxhash
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -38,7 +38,7 @@ BuildArch:      noarch
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
-Summary:        Nonblocking Lua etcd driver library for nginx-module-lua for Lua %{luacompatver}
+Summary:        LuaJIT FFI-bindings to xxHash, an Extremely fast non-cryptographic hash algorithm for Lua %{luacompatver}
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif

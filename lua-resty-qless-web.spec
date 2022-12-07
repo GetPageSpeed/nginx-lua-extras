@@ -6,18 +6,18 @@
 %global luacompatpkgdir %{_datadir}/lua/%{luacompatver}
 %global luacompatlibdir %{_datadir}/lua/%{luacompatver}
 
-%global luapkgname resty-etcd
+%global luapkgname resty-qless-web
 
-%global gittag v%{version}
-%global gittag_nov %{version}
+%global gittag v0.05
+%global gittag_nov 0.05
 
 Name:           lua-%{luapkgname}
-Version:        1.10.1
+Version:        0.5
 Release:        3%{?dist}
-Summary:        Nonblocking Lua etcd driver library for nginx-module-lua
+Summary:        Port of Qless' web interface to nginx-module-lua environment
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/api7/lua-resty-etcd
+URL:            https://github.com/hamishforbes/lua-resty-qless-web
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -31,6 +31,9 @@ BuildRequires:  compat-lua >= %{luacompatver}, compat-lua-devel >= %{luacompatve
 Requires:       lua(abi) = %{luacompatver}
 %endif
 
+
+Requires:       lua-resty-qless
+Requires:       lua-resty-template
 BuildArch:      noarch
 
 %description
@@ -38,7 +41,9 @@ BuildArch:      noarch
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
-Summary:        Nonblocking Lua etcd driver library for nginx-module-lua for Lua %{luacompatver}
+Summary:        Port of Qless' web interface to nginx-module-lua environment for Lua %{luacompatver}
+Requires:       lua%{luacompatver}-resty-qless
+Requires:       lua%{luacompatver}-resty-template
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif
@@ -69,7 +74,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 %{luapkgdir}/*
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
-%license LICENSE
+%license LICENSE.txt
 %doc README.md
 
 
@@ -78,7 +83,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 %{luacompatpkgdir}/*
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
-%license LICENSE
+%license LICENSE.txt
 %doc README.md
 %endif
 
