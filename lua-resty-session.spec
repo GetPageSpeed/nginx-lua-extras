@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        3.10
+Version:        4.0.0
 Release:        3%{?dist}
 Summary:        Session library for nginx-module-lua – flexible and secure
 Group:          Development/Libraries
@@ -31,8 +31,6 @@ BuildRequires:  compat-lua >= %{luacompatver}, compat-lua-devel >= %{luacompatve
 Requires:       lua(abi) = %{luacompatver}
 %endif
 
-
-Requires:       lua-resty-string
 BuildArch:      noarch
 
 %description
@@ -41,7 +39,6 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Session library for nginx-module-lua – flexible and secure for Lua %{luacompatver}
-Requires:       lua%{luacompatver}-resty-string
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif
