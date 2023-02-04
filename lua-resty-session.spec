@@ -31,6 +31,8 @@ BuildRequires:  compat-lua >= %{luacompatver}, compat-lua-devel >= %{luacompatve
 Requires:       lua(abi) = %{luacompatver}
 %endif
 
+
+Requires:       lua-resty-openssl
 BuildArch:      noarch
 
 %description
@@ -39,6 +41,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Session library for nginx-module-lua – flexible and secure for Lua %{luacompatver}
+Requires:       lua%{luacompatver}-resty-openssl
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif
