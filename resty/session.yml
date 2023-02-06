@@ -1,4 +1,4 @@
 repo: bungle/lua-resty-session
 requires:
-- resty-openssl
+- resty-openssl >= 0.8.0
 summary: "Session library for nginx-module-lua \u2013 flexible and secure"
