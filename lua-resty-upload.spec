@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.10
+Version:        0.11
 Release:        3%{?dist}
 Summary:        Streaming reader and parser for http file uploading based on nginx-module-lua cosocket
 Group:          Development/Libraries
