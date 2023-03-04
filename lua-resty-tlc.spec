@@ -6,18 +6,18 @@
 %global luacompatpkgdir %{_datadir}/lua/%{luacompatver}
 %global luacompatlibdir %{_datadir}/lua/%{luacompatver}
 
-%global luapkgname resty-openssl
+%global luapkgname resty-tlc
 
-%global gittag %{version}
-%global gittag_nov %{version}
+%global gittag v0.02
+%global gittag_nov 0.02
 
 Name:           lua-%{luapkgname}
-Version:        0.8.18
+Version:        0.2
 Release:        3%{?dist}
-Summary:        FFI-based OpenSSL binding for nginx-module-lua
+Summary:        General two level cache (lrucache + shared dict)
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/fffonion/lua-resty-openssl
+URL:            https://github.com/hamishforbes/lua-resty-tlc
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -38,7 +38,7 @@ BuildArch:      noarch
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
-Summary:        FFI-based OpenSSL binding for nginx-module-lua for Lua %{luacompatver}
+Summary:        General two level cache (lrucache + shared dict) for Lua %{luacompatver}
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif
@@ -69,7 +69,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 %{luapkgdir}/*
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
-%license LICENSE
+%license LICENSE.txt
 %doc README.md
 
 
@@ -78,7 +78,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 %{luacompatpkgdir}/*
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
-%license LICENSE
+%license LICENSE.txt
 %doc README.md
 %endif
 
