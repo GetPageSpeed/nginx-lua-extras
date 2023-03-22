@@ -8,11 +8,11 @@
 
 %global luapkgname resty-upstream-healthcheck
 
-%global gittag v0.07
-%global gittag_nov 0.07
+%global gittag v0.08
+%global gittag_nov 0.08
 
 Name:           lua-%{luapkgname}
-Version:        0.7
+Version:        0.8
 Release:        3%{?dist}
 Summary:        Health Checker for NGINX Upstream Servers in Pure Lua
 Group:          Development/Libraries
