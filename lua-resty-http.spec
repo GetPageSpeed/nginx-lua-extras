@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.16.1
+Version:        0.17.1
 Release:        3%{?dist}
 Summary:        Lua HTTP client cosocket driver for nginx-module-lua
 Group:          Development/Libraries

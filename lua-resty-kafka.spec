@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.20
+Version:        0.21
 Release:        3%{?dist}
 Summary:        Lua kafka client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
