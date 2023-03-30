@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.10.1
+Version:        0.11.0
 Release:        3%{?dist}
 Summary:        Automatic Let's Encrypt certificate serving and Lua implementation of ACMEv2 procotol
 Group:          Development/Libraries
