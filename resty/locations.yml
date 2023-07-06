@@ -1,0 +1,2 @@
+repo: hamishforbes/lua-resty-locations
+summary: Lua library implementing nginx style location uri matching

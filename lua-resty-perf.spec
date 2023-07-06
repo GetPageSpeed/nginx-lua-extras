@@ -6,18 +6,18 @@
 %global luacompatpkgdir %{_datadir}/lua/%{luacompatver}
 %global luacompatlibdir %{_datadir}/lua/%{luacompatver}
 
-%global luapkgname resty-core
+%global luapkgname resty-perf
 
-%global gittag v%{version}
+%global gittag %{version}
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.1.27
+Version:        1.0.4
 Release:        3%{?dist}
-Summary:        New FFI-based API for lua-nginx-module
+Summary:        A small ngx resty lua library to benchmark memory and throughput of a function
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/openresty/lua-resty-core
+URL:            https://github.com/leandromoreira/lua-resty-perf
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -31,9 +31,6 @@ BuildRequires:  compat-lua >= %{luacompatver}, compat-lua-devel >= %{luacompatve
 Requires:       lua(abi) = %{luacompatver}
 %endif
 
-
-Requires:       lua-resty-lrucache >= 0.8
-Requires:       lua-ngx_http_lua_module >= 0.10.25
 BuildArch:      noarch
 
 %description
@@ -41,9 +38,7 @@ BuildArch:      noarch
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
-Summary:        New FFI-based API for lua-nginx-module for Lua %{luacompatver}
-Requires:       lua%{luacompatver}-resty-lrucache >= 0.8
-Requires:       lua%{luacompatver}-ngx_http_lua_module >= 0.10.25
+Summary:        A small ngx resty lua library to benchmark memory and throughput of a function for Lua %{luacompatver}
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif
@@ -72,13 +67,19 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %files
 %{luapkgdir}/*
-%doc README.markdown
+# Virtually add license macro for EL6:
+%{!?_licensedir:%global license %%doc}
+%license LICENSE
+%doc README.md
 
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %files -n lua%{luacompatver}-%{luapkgname}
 %{luacompatpkgdir}/*
-%doc README.markdown
+# Virtually add license macro for EL6:
+%{!?_licensedir:%global license %%doc}
+%license LICENSE
+%doc README.md
 %endif
 
 

@@ -1,0 +1,2 @@
+repo: leandromoreira/lua-resty-perf
+summary: A small ngx resty lua library to benchmark memory and throughput of a function
