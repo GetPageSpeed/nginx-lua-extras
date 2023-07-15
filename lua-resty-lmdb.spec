@@ -8,11 +8,11 @@
 
 %global luapkgname resty-lmdb
 
-%global gittag %{version}
+%global gittag v%{version}
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        1.2.0
+Version:        1.3.0
 Release:        3%{?dist}
 Summary:        Safe API for manipulating LMDB databases using nginx-module-lua
 Group:          Development/Libraries
