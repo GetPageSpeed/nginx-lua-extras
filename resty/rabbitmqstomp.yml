@@ -1,3 +1,0 @@
-repo: wingify/lua-resty-rabbitmqstomp
-summary: Opinionated Lua RabbitMQ client library for nginx-module-lua apps based on
-  the cosocket API

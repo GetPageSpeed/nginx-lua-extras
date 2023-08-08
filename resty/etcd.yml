@@ -1,2 +1,0 @@
-repo: api7/lua-resty-etcd
-summary: Nonblocking Lua etcd driver library for nginx-module-lua
