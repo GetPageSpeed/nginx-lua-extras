@@ -1,0 +1,2 @@
+repo: Kong/lua-resty-worker-events
+summary: Cross Worker Events for NGINX in Pure Lua

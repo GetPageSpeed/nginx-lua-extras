@@ -1,0 +1,2 @@
+repo: bungle/lua-resty-nettle
+summary: LuaJIT FFI bindings for Nettle (a low-level cryptographic library)
