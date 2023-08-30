@@ -1,3 +1,0 @@
-repo: tokers/lua-resty-ctxdump
-summary: Stash and apply the old ngx.ctx for avoiding being destoried after NGINX
-  internal redirect happens
