@@ -1,0 +1,3 @@
+repo: perusio/lua-resty-tarantool
+summary: Library for working with tarantool from nginx with the embedded Lua module
+  or with nginx-module-lua
