@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        1.0.2
+Version:        1.1.0
 Release:        3%{?dist}
 Summary:        A high-level, easy to use, and non-blocking email and SMTP library for nginx-module-lua
 Group:          Development/Libraries
