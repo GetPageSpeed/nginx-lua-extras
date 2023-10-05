@@ -3,11 +3,33 @@ import configparser
 from github import Github
 from github.GithubException import UnknownObjectException, GithubException
 import os
-import logging as log
 from lastversion import lastversion
 import yaml
 import re
+import logging
 
+
+def setup_logging(level=logging.INFO):
+    """
+    Setup logging configuration for CLI applications.
+    """
+    logger = logging.getLogger()  # root logger
+    logger.setLevel(level)  # or whatever minimum level you want
+
+    # Create a handler that writes log messages to stderr, with level
+    # WARNING and above
+    err_handler = logging.StreamHandler()
+    err_handler.setLevel(logging.WARNING)
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    err_handler.setFormatter(formatter)
+
+    # Add the handler to the logger
+    logger.addHandler(err_handler)
+
+    return logger
+
+
+log = setup_logging()
 openresty_str = re.compile("OpenResty", re.IGNORECASE)
 
 # search github lua-resty with pagination
@@ -21,8 +43,6 @@ from github.Repository import Repository
 
 g = Github(os.getenv("GITHUB_API_TOKEN"))
 work_dir = os.path.dirname(__file__)
-
-log.basicConfig(level=log.INFO)
 
 disabled_repos = {
     'saks/lua-resty-newrelic': 'Downloading release .tar.gz results in a HTTP Error 300: Multiple Choices'
