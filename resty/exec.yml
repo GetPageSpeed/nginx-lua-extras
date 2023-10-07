@@ -1,0 +1,2 @@
+repo: jprjr/lua-resty-exec
+summary: Run external programs in nginx-module-lua without spawning a shell or blocking

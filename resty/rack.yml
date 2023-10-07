@@ -1,0 +1,2 @@
+repo: pintsized/lua-resty-rack
+summary: A simple and extensible HTTP server framework for nginx-module-lua
