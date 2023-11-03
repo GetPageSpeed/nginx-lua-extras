@@ -67,12 +67,18 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %files
 %{luapkgdir}/*
+# Virtually add license macro for EL6:
+%{!?_licensedir:%global license %%doc}
+%license LICENSE
 %doc README.md
 
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %files -n lua%{luacompatver}-%{luapkgname}
 %{luacompatpkgdir}/*
+# Virtually add license macro for EL6:
+%{!?_licensedir:%global license %%doc}
+%license LICENSE
 %doc README.md
 %endif
 
