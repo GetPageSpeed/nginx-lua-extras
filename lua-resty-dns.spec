@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.22
+Version:        0.23
 Release:        3%{?dist}
 Summary:        DNS resolver for nginx-module-lua
 Group:          Development/Libraries
