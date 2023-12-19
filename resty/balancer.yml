@@ -1,2 +1,0 @@
-repo: openresty/lua-resty-balancer
-summary: A generic consistent hash implementation for nginx-module-lua

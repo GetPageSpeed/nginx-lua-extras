@@ -8,11 +8,11 @@
 
 %global luapkgname resty-woothee
 
-%global gittag v1.12.0-1
-%global gittag_nov 1.12.0-1
+%global gittag v%{version}-1
+%global gittag_nov %{version}-1
 
 Name:           lua-%{luapkgname}
-Version:        1.12.0.1
+Version:        1.12.0
 Release:        3%{?dist}
 Summary:        Woothee Lua-nginx-module-lua implementation
 Group:          Development/Libraries

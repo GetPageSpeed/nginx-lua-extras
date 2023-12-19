@@ -8,11 +8,11 @@
 
 %global luapkgname resty-aws-auth
 
-%global gittag v0.12-0
-%global gittag_nov 0.12-0
+%global gittag v%{version}-0
+%global gittag_nov %{version}-0
 
 Name:           lua-%{luapkgname}
-Version:        0.12.0
+Version:        0.12
 Release:        3%{?dist}
 Summary:        Lua resty module to calculate AWS signature v4 authorization header
 Group:          Development/Libraries
