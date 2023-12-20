@@ -6,18 +6,18 @@
 %global luacompatpkgdir %{_datadir}/lua/%{luacompatver}
 %global luacompatlibdir %{_datadir}/lua/%{luacompatver}
 
-%global luapkgname resty-qless-web
+%global luapkgname resty-jwt
 
-%global gittag v0.05
-%global gittag_nov 0.05
+%global gittag v%{version}
+%global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.5
+Version:        0.1.11
 Release:        3%{?dist}
-Summary:        Port of Qless' web interface to nginx-module-lua environment
+Summary:        JWT For The Great nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
-URL:            https://github.com/hamishforbes/lua-resty-qless-web
+URL:            https://github.com/SkyLothar/lua-resty-jwt
 Source0:        %{url}/archive/%{gittag}/%{name}-%{gittag}.tar.gz
 
 %if 0%{?fedora} || 0%{?rhel} >= 7
@@ -32,8 +32,7 @@ Requires:       lua(abi) = %{luacompatver}
 %endif
 
 
-Requires:       lua-resty-qless
-Requires:       lua-resty-template
+Requires:       lua-resty-hmac >= 0.1
 BuildArch:      noarch
 
 %description
@@ -41,9 +40,8 @@ BuildArch:      noarch
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
-Summary:        Port of Qless' web interface to nginx-module-lua environment for Lua %{luacompatver}
-Requires:       lua%{luacompatver}-resty-qless
-Requires:       lua%{luacompatver}-resty-template
+Summary:        JWT For The Great nginx-module-lua for Lua %{luacompatver}
+Requires:       lua%{luacompatver}-resty-hmac >= 0.1
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif
@@ -74,7 +72,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 %{luapkgdir}/*
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
-%license LICENSE.txt
+%license LICENSE
 %doc README.md
 
 
@@ -83,7 +81,7 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 %{luacompatpkgdir}/*
 # Virtually add license macro for EL6:
 %{!?_licensedir:%global license %%doc}
-%license LICENSE.txt
+%license LICENSE
 %doc README.md
 %endif
 
