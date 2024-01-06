@@ -1,5 +1,6 @@
 repo: openresty/lua-resty-core
-requires:
+lib_requires:
   - resty-lrucache >= 0.8
+requires:
   - ngx_http_lua_module >= 0.10.25
 summary: New FFI-based API for lua-nginx-module

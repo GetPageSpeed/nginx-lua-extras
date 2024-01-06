@@ -63,6 +63,7 @@ for repo in repositories:
         continue
     module_name = repo.name.replace('lua-resty-', '')
     filename = os.path.join(work_dir, f'resty/{module_name}.yml')
+    # If module file has been created during this launch (e.g. author1/repo1 and author2/repo1 have same name)
     if os.path.exists(filename):
         log.warning('Skipping. Definition already exists for this name. Likely a less popular fork')
         continue
@@ -129,15 +130,16 @@ for repo in repositories:
             requires = re.sub(r'0\.0(\d)', r"0.\1", requires)
             requires = requires.split(',')
             requires_found = []
+            lib_requires_found = []
             for r in requires:
                 parts = r.split('/')
                 r = parts[-1].strip()
                 if r.startswith('lua-resty-'):
-                    requires_found.append(r.replace('lua-', ''))
+                    lib_requires_found.append(r.replace('lua-', ''))
             print(requires)
-            print(requires_found)
-            if requires_found:
-                dict_file['requires'] = requires_found
+            print(lib_requires_found)
+            if lib_requires_found:
+                dict_file['lib_requires'] = lib_requires_found
 
     with open(filename, 'w', encoding='utf8') as file:
         documents = yaml.dump(dict_file, file)

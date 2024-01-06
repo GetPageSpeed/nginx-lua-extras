@@ -13,7 +13,7 @@
 
 Name:           lua-%{luapkgname}
 Version:        {{ version }}
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        {{ summary }}
 Group:          Development/Libraries
 License:        BSD
@@ -33,6 +33,12 @@ Requires:       lua(abi) = %{luacompatver}
 
 {% if requires is defined and requires is iterable %}
 {% for r in requires -%}
+Requires: {{ r }}
+{% endfor -%}
+{%- endif -%}
+
+{% if lib_requires is defined and lib_requires is iterable %}
+{% for r in lib_requires -%}
 Requires:       lua-{{ r }}
 {% endfor -%}
 {%- endif -%}
@@ -49,7 +55,7 @@ Provides:       {{ p }}
 {% endfor -%}
 {%- endif -%}
 
-BuildArch:      noarch
+BuildArch: noarch
 
 %description
 %{summary}.
@@ -57,8 +63,15 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        {{ summary }} for Lua %{luacompatver}
-{% if requires is defined and requires is iterable -%}
+
+{% if requires is defined and requires is iterable %}
 {% for r in requires -%}
+Requires: {{ r }}
+{% endfor -%}
+{%- endif -%}
+
+{% if lib_requires is defined and lib_requires is iterable -%}
+{% for r in lib_requires -%}
 Requires:       lua%{luacompatver}-{{ r }}
 {% endfor -%}
 {%- endif -%}
@@ -118,4 +131,3 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %changelog
 # not maintained
-
