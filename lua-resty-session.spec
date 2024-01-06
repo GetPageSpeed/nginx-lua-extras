@@ -13,7 +13,7 @@
 
 Name:           lua-%{luapkgname}
 Version:        4.0.5
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Session library for nginx-module-lua – flexible and secure
 Group:          Development/Libraries
 License:        BSD
@@ -33,7 +33,7 @@ Requires:       lua(abi) = %{luacompatver}
 
 
 Requires:       lua-resty-openssl >= 0.8.0
-BuildArch:      noarch
+BuildArch: noarch
 
 %description
 %{summary}.
@@ -41,6 +41,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Session library for nginx-module-lua – flexible and secure for Lua %{luacompatver}
+
 Requires:       lua%{luacompatver}-resty-openssl >= 0.8.0
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
@@ -89,4 +90,3 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %changelog
 # not maintained
-

@@ -13,7 +13,7 @@
 
 Name:           lua-%{luapkgname}
 Version:        0.6
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        HMAC functions for nginx-module-lua and LuaJIT
 Group:          Development/Libraries
 License:        BSD
@@ -33,7 +33,7 @@ Requires:       lua(abi) = %{luacompatver}
 
 
 Requires:       lua-resty-string >= 0.8
-BuildArch:      noarch
+BuildArch: noarch
 
 %description
 %{summary}.
@@ -41,6 +41,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        HMAC functions for nginx-module-lua and LuaJIT for Lua %{luacompatver}
+
 Requires:       lua%{luacompatver}-resty-string >= 0.8
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
@@ -83,4 +84,3 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %changelog
 # not maintained
-

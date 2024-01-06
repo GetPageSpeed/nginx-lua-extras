@@ -13,7 +13,7 @@
 
 Name:           lua-%{luapkgname}
 Version:        0.22
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        SNI Proxy based on stream-lua-nginx-module
 Group:          Development/Libraries
 License:        BSD
@@ -31,7 +31,7 @@ BuildRequires:  compat-lua >= %{luacompatver}, compat-lua-devel >= %{luacompatve
 Requires:       lua(abi) = %{luacompatver}
 %endif
 
-BuildArch:      noarch
+BuildArch: noarch
 
 %description
 %{summary}.
@@ -39,6 +39,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        SNI Proxy based on stream-lua-nginx-module for Lua %{luacompatver}
+
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif
@@ -80,4 +81,3 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %changelog
 # not maintained
-

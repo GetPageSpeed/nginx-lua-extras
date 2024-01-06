@@ -13,7 +13,7 @@
 
 Name:           lua-%{luapkgname}
 Version:        1.7.6
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        OpenID Connect Relying Party and OAuth 2.0 Resource Server implementation in Lua for NGINX / nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
@@ -35,7 +35,7 @@ Requires:       lua(abi) = %{luacompatver}
 Requires:       lua-resty-http >= 0.13
 Requires:       lua-resty-session >= 2.8
 Requires:       lua-resty-jwt >= 0.2.0
-BuildArch:      noarch
+BuildArch: noarch
 
 %description
 %{summary}.
@@ -43,6 +43,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        OpenID Connect Relying Party and OAuth 2.0 Resource Server implementation in Lua for NGINX / nginx-module-lua for Lua %{luacompatver}
+
 Requires:       lua%{luacompatver}-resty-http >= 0.13
 Requires:       lua%{luacompatver}-resty-session >= 2.8
 Requires:       lua%{luacompatver}-resty-jwt >= 0.2.0
@@ -93,4 +94,3 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %changelog
 # not maintained
-

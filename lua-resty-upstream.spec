@@ -13,7 +13,7 @@
 
 Name:           lua-%{luapkgname}
 Version:        0.10
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Upstream connection load balancing and failover module for nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
@@ -33,7 +33,7 @@ Requires:       lua(abi) = %{luacompatver}
 
 
 Requires:       lua-resty-http
-BuildArch:      noarch
+BuildArch: noarch
 
 %description
 %{summary}.
@@ -41,6 +41,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Upstream connection load balancing and failover module for nginx-module-lua for Lua %{luacompatver}
+
 Requires:       lua%{luacompatver}-resty-http
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
@@ -89,4 +90,3 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %changelog
 # not maintained
-

@@ -13,7 +13,7 @@
 
 Name:           lua-%{luapkgname}
 Version:        0.1.11
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        JWT For The Great nginx-module-lua
 Group:          Development/Libraries
 License:        BSD
@@ -33,7 +33,7 @@ Requires:       lua(abi) = %{luacompatver}
 
 
 Requires:       lua-resty-hmac >= 0.1
-BuildArch:      noarch
+BuildArch: noarch
 
 %description
 %{summary}.
@@ -41,6 +41,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        JWT For The Great nginx-module-lua for Lua %{luacompatver}
+
 Requires:       lua%{luacompatver}-resty-hmac >= 0.1
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
@@ -89,4 +90,3 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %changelog
 # not maintained
-

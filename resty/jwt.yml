@@ -1,4 +1,4 @@
-repo: SkyLothar/lua-resty-jwt
-requires:
+lib_requires:
 - resty-hmac >= 0.1
+repo: SkyLothar/lua-resty-jwt
 summary: JWT For The Great nginx-module-lua

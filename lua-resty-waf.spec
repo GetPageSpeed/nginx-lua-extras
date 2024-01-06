@@ -13,7 +13,7 @@
 
 Name:           lua-%{luapkgname}
 Version:        0.11.1
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        High-performance WAF built on nginx-module-lua stack
 Group:          Development/Libraries
 License:        BSD
@@ -35,7 +35,7 @@ Requires:       lua(abi) = %{luacompatver}
 Requires:       lua-resty-iputils
 Requires:       lua-resty-cookie
 Requires:       lua-resty-logger-socket
-BuildArch:      noarch
+BuildArch: noarch
 
 %description
 %{summary}.
@@ -43,6 +43,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        High-performance WAF built on nginx-module-lua stack for Lua %{luacompatver}
+
 Requires:       lua%{luacompatver}-resty-iputils
 Requires:       lua%{luacompatver}-resty-cookie
 Requires:       lua%{luacompatver}-resty-logger-socket
@@ -93,4 +94,3 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %changelog
 # not maintained
-

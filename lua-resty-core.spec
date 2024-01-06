@@ -13,7 +13,7 @@
 
 Name:           lua-%{luapkgname}
 Version:        0.1.28
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        New FFI-based API for lua-nginx-module
 Group:          Development/Libraries
 License:        BSD
@@ -32,9 +32,10 @@ Requires:       lua(abi) = %{luacompatver}
 %endif
 
 
+Requires: ngx_http_lua_module >= 0.10.25
+
 Requires:       lua-resty-lrucache >= 0.8
-Requires:       lua-ngx_http_lua_module >= 0.10.25
-BuildArch:      noarch
+BuildArch: noarch
 
 %description
 %{summary}.
@@ -42,8 +43,10 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        New FFI-based API for lua-nginx-module for Lua %{luacompatver}
+
+
+Requires: ngx_http_lua_module >= 0.10.25
 Requires:       lua%{luacompatver}-resty-lrucache >= 0.8
-Requires:       lua%{luacompatver}-ngx_http_lua_module >= 0.10.25
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
 %endif
@@ -85,4 +88,3 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %changelog
 # not maintained
-

@@ -13,7 +13,7 @@
 
 Name:           lua-%{luapkgname}
 Version:        0.3
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Limit the request processing rate between multiple NGINX instances backed by Redis
 Group:          Development/Libraries
 License:        BSD
@@ -33,7 +33,7 @@ Requires:       lua(abi) = %{luacompatver}
 
 
 Requires:       lua-resty-redis
-BuildArch:      noarch
+BuildArch: noarch
 
 %description
 %{summary}.
@@ -41,6 +41,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Limit the request processing rate between multiple NGINX instances backed by Redis for Lua %{luacompatver}
+
 Requires:       lua%{luacompatver}-resty-redis
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
@@ -83,4 +84,3 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %changelog
 # not maintained
-

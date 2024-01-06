@@ -1,7 +1,7 @@
-repo: zmartzone/lua-resty-openidc
-requires:
+lib_requires:
 - resty-http >= 0.13
 - resty-session >= 2.8
 - resty-jwt >= 0.2.0
+repo: zmartzone/lua-resty-openidc
 summary: OpenID Connect Relying Party and OAuth 2.0 Resource Server implementation
   in Lua for NGINX / nginx-module-lua

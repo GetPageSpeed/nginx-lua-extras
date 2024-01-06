@@ -13,7 +13,7 @@
 
 Name:           lua-%{luapkgname}
 Version:        0.5
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Port of Qless' web interface to nginx-module-lua environment
 Group:          Development/Libraries
 License:        BSD
@@ -34,7 +34,7 @@ Requires:       lua(abi) = %{luacompatver}
 
 Requires:       lua-resty-qless
 Requires:       lua-resty-template
-BuildArch:      noarch
+BuildArch: noarch
 
 %description
 %{summary}.
@@ -42,6 +42,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Port of Qless' web interface to nginx-module-lua environment for Lua %{luacompatver}
+
 Requires:       lua%{luacompatver}-resty-qless
 Requires:       lua%{luacompatver}-resty-template
 %description -n lua%{luacompatver}-%{luapkgname}
@@ -91,4 +92,3 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %changelog
 # not maintained
-

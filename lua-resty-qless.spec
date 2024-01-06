@@ -13,7 +13,7 @@
 
 Name:           lua-%{luapkgname}
 Version:        0.12
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Lua binding to Qless (Queue / Pipeline management) for nginx-module-lua / Redis
 Group:          Development/Libraries
 License:        BSD
@@ -34,7 +34,7 @@ Requires:       lua(abi) = %{luacompatver}
 
 Requires:       lua-resty-redis
 Requires:       lua-resty-redis-connector >= 0.4
-BuildArch:      noarch
+BuildArch: noarch
 
 %description
 %{summary}.
@@ -42,6 +42,7 @@ BuildArch:      noarch
 %if 0%{?fedora} || 0%{?rhel} > 7
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        Lua binding to Qless (Queue / Pipeline management) for nginx-module-lua / Redis for Lua %{luacompatver}
+
 Requires:       lua%{luacompatver}-resty-redis
 Requires:       lua%{luacompatver}-resty-redis-connector >= 0.4
 %description -n lua%{luacompatver}-%{luapkgname}
@@ -85,4 +86,3 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %changelog
 # not maintained
-
