@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        2.9.0
+Version:        2.9.1
 Release:        4%{?dist}
 Summary:        Adaptive Radix Trees implemented in Lua / LuaJIT
 Group:          Development/Libraries
