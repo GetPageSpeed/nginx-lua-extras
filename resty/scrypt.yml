@@ -1,0 +1,2 @@
+repo: bungle/lua-resty-scrypt
+summary: LuaJIT FFI-based scrypt library for nginx-module-lua
