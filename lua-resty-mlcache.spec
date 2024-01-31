@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        2.6.0
+Version:        2.6.1
 Release:        4%{?dist}
 Summary:        Layered caching library for nginx-module-lua
 Group:          Development/Libraries
