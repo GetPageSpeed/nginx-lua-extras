@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        3.0.2
+Version:        3.1.0
 Release:        4%{?dist}
 Summary:        Healthcheck library for nginx-module-lua to validate upstream service status
 Group:          Development/Libraries
