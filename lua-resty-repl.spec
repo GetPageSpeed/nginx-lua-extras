@@ -8,11 +8,11 @@
 
 %global luapkgname resty-repl
 
-%global gittag v%{version}
-%global gittag_nov %{version}
+%global gittag 0.01
+%global gittag_nov 0.01
 
 Name:           lua-%{luapkgname}
-Version:        0.0.1
+Version:        0.1
 Release:        4%{?dist}
 Summary:        Interactive console (REPL) for nginx-module-lua and luajit code
 Group:          Development/Libraries
@@ -68,12 +68,18 @@ cp -pr lib/* $RPM_BUILD_ROOT%{luacompatpkgdir}
 
 %files
 %{luapkgdir}/*
+# Virtually add license macro for EL6:
+%{!?_licensedir:%global license %%doc}
+%license LICENSE
 %doc README.md
 
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %files -n lua%{luacompatver}-%{luapkgname}
 %{luacompatpkgdir}/*
+# Virtually add license macro for EL6:
+%{!?_licensedir:%global license %%doc}
+%license LICENSE
 %doc README.md
 %endif
 
