@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.30
+Version:        0.31
 Release:        4%{?dist}
 Summary:        Lua redis client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries

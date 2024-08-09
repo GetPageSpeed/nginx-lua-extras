@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.15
+Version:        0.16
 Release:        4%{?dist}
 Summary:        String utilities and common hash functions for nginx-module-lua and LuaJIT
 Group:          Development/Libraries
