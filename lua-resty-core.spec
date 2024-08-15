@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.1.28
+Version:        0.1.29
 Release:        4%{?dist}
 Summary:        New FFI-based API for lua-nginx-module
 Group:          Development/Libraries
