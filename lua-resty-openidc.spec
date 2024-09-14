@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        1.7.6
+Version:        1.8.0
 Release:        4%{?dist}
 Summary:        OpenID Connect Relying Party and OAuth 2.0 Resource Server implementation in Lua for NGINX / nginx-module-lua
 Group:          Development/Libraries
