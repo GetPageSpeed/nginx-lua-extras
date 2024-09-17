@@ -1,2 +1,0 @@
-repo: GUI/lua-resty-txid
-summary: Generate sortable, unique transaction or request IDs for nginx-module-lua/nginx
