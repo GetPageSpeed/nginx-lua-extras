@@ -1,0 +1,5 @@
+lib_requires:
+- resty-qless
+- resty-template
+repo: hamishforbes/lua-resty-qless-web
+summary: Port of Qless' web interface to nginx-module-lua environment
