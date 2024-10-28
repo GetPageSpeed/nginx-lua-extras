@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        1.3.3
+Version:        1.3.4
 Release:        4%{?dist}
 Summary:        A Lua library for reading MaxMind's Geolocation database
 Group:          Development/Libraries
