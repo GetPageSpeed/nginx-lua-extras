@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        1.1.5
+Version:        1.1.6
 Release:        4%{?dist}
 Summary:        Lua implementation of the T1K protocol for Chaitin/SafeLine WAF
 Group:          Development/Libraries
