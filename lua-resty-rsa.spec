@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        1.1.0
+Version:        1.1.1
 Release:        4%{?dist}
 Summary:        RSA encrypt/decrypt & sign/verify for nginx-module-luaJIT
 Group:          Development/Libraries
