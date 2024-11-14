@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        1.4
+Version:        1.5
 Release:        4%{?dist}
 Summary:        Lua Pubsub client driver for nginx-module-lua based on the cosocket API
 Group:          Development/Libraries
