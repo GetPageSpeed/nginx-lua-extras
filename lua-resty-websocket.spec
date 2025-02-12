@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.12
+Version:        0.13
 Release:        4%{?dist}
 Summary:        WebSocket support for nginx-module-lua module
 Group:          Development/Libraries
