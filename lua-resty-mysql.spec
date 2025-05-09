@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.27
+Version:        0.28
 Release:        4%{?dist}
 Summary:        Nonblocking Lua MySQL driver library for nginx-module-lua
 Group:          Development/Libraries
