@@ -1,0 +1,5 @@
+lib_requires:
+- resty-openssl >= 1.6.2
+- resty-http >= 0.17.1
+repo: anvouk/lua-resty-jwt-verification
+summary: JWT verification library for nginx-module-lua with JWKS integration
