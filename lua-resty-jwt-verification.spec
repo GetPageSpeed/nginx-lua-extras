@@ -12,7 +12,7 @@
 %global gittag_nov %{version}
 
 Name:           lua-%{luapkgname}
-Version:        0.6.0
+Version:        0.7.0
 Release:        4%{?dist}
 Summary:        JWT verification library for nginx-module-lua with JWKS integration
 Group:          Development/Libraries
@@ -32,7 +32,7 @@ Requires:       lua(abi) = %{luacompatver}
 %endif
 
 
-Requires:       lua-resty-openssl >= 1.6.2
+Requires:       lua-resty-openssl >= 1.7.0
 Requires:       lua-resty-http >= 0.17.1
 BuildArch: noarch
 
@@ -43,7 +43,7 @@ BuildArch: noarch
 %package -n lua%{luacompatver}-%{luapkgname}
 Summary:        JWT verification library for nginx-module-lua with JWKS integration for Lua %{luacompatver}
 
-Requires:       lua%{luacompatver}-resty-openssl >= 1.6.2
+Requires:       lua%{luacompatver}-resty-openssl >= 1.7.0
 Requires:       lua%{luacompatver}-resty-http >= 0.17.1
 %description -n lua%{luacompatver}-%{luapkgname}
 %{summary}.
