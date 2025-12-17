@@ -8,11 +8,11 @@
 
 %global luapkgname resty-core
 
-%global gittag v%{version}
-%global gittag_nov %{version}
+%global gittag v0.1.32R1
+%global gittag_nov 0.1.32R1
 
 Name:           lua-%{luapkgname}
-Version:        0.1.32
+Version:        0.1.32.post1
 Release:        4%{?dist}
 Summary:        New FFI-based API for lua-nginx-module
 Group:          Development/Libraries
